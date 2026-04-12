@@ -47,6 +47,8 @@ const PAGE_MAP = {
   'spine/total':          'docs/manual/spine/total.md',
   'checkin':              'docs/manual/checkin.md',
   'contrast':             'docs/manual/contrast.md',
+  'special/mrs':          'docs/manual/special/mrs.md',
+  'special/lower_limb':   'docs/manual/special/lower_limb.md',
   'minutes/index':        'docs/minutes/index.md',
   'minutes/202309':       'docs/minutes/202309.md',
   'minutes/202404':       'docs/minutes/202404.md',
