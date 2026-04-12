@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1a5276">
+  <meta name="description" content="八尾市立病院 放射線技術科 MRI業務マニュアル">
+  <title>MRI業務マニュアル | 八尾市立病院 放射線技術科</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="assets/images/icon-192.png">
+</head>
+<body>
+
+<!-- ヘッダー -->
+<header class="site-header">
+  <div class="header-inner">
+    <button class="hamburger" id="hamburgerBtn" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="site-title">
+      <span class="site-title-main">MRI業務マニュアル</span>
+      <span class="site-title-sub">八尾市立病院 放射線技術科</span>
+    </div>
+    <button class="search-toggle" id="searchToggleBtn" aria-label="検索">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    </button>
+  </div>
+  <!-- 検索バー -->
+  <div class="search-bar" id="searchBar">
+    <div class="search-inner">
+      <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="searchInput" placeholder="シーケンス名・部位・検査名で検索..." autocomplete="off">
+      <button id="searchClearBtn" class="search-clear" aria-label="クリア">✕</button>
+    </div>
+    <div id="searchResults" class="search-results"></div>
+  </div>
+</header>
+
+<!-- サイドバー -->
+<nav class="sidebar" id="sidebar">
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>目次</span>
+      <button class="sidebar-close" id="sidebarClose">✕</button>
+    </div>
+    <ul class="nav-list" id="navList">
+      <li class="nav-section">
+        <a href="#" class="nav-home" data-page="home">🏠 ホーム</a>
+      </li>
+      <li class="nav-section">
+        <span class="nav-category">頭部・脳</span>
+        <ul>
+          <li><a href="#" data-page="head/stroke">脳卒中（Brain CI / Rapid）</a></li>
+          <li><a href="#" data-page="head/aneurysm">動脈瘤・VA解離</a></li>
+          <li><a href="#" data-page="head/vertigo">めまい・顔面神経麻痺</a></li>
+          <li><a href="#" data-page="head/epilepsy">てんかん・認知症・パーキンソン</a></li>
+          <li><a href="#" data-page="head/headache">頭痛・小脳変性</a></li>
+          <li><a href="#" data-page="head/neuro">動眼〜外転神経麻痺・嗅覚障害</a></li>
+          <li><a href="#" data-page="head/tumor">脳腫瘍（単純・造影）</a></li>
+          <li><a href="#" data-page="head/child">小児頭部・STA-MCA術後</a></li>
+        </ul>
+      </li>
+      <li class="nav-section">
+        <span class="nav-category">内耳・顎関節</span>
+        <ul>
+          <li><a href="#" data-page="inner_ear/iac">内耳・IAC（難聴・聴神経腫瘍）</a></li>
+        </ul>
+      </li>
+      <li class="nav-section">
+        <span class="nav-category">副鼻腔</span>
+        <ul>
+          <li><a href="#" data-page="sinus/sinus">副鼻腔（単純・造影）</a></li>
+        </ul>
+      </li>
+      <li class="nav-section">
+        <span class="nav-category">下垂体・眼窩</span>
+        <ul>
+          <li><a href="#" data-page="pituitary/pituitary">下垂体（単純・造影）</a></li>
+          <li><a href="#" data-page="orbit/orbit">眼窩（単純・造影）</a></li>
+        </ul>
+      </li>
+      <li class="nav-section">
+        <span class="nav-category">頸部・MRA</span>
+        <ul>
+          <li><a href="#" data-page="neck/neck">頸部（単純・造影・唾液腺）</a></li>
+          <li><a href="#" data-page="neck/mra">頭部〜大動脈弓MRA</a></li>
+        </ul>
+      </li>
+      <li class="nav-section">
+        <span class="nav-category">胸部・心臓</span>
+        <ul>
+          <li><a href="#" data-page="chest/chest">縦隔（単純・造影）</a></li>
+          <li><a href="#" data-page="heart/heart">心臓・冠動脈</a></li>
+        </ul>
+      </li>
+      <li class="nav-section">
+        <span class="nav-category">乳房</span>
+        <ul>
+          <li><a href="#" data-page="breast/breast">乳房（腹臥位・仰臥位・インプラント）</a></li>
+        </ul>
+      </li>
+      <li class="nav-section">
+        <span class="nav-category">腹部</span>
+        <ul>
+          <li><a href="#" data-page="abdomen/liver">肝臓・SPIO・EOB</a></li>
+          <li><a href="#" data-page="abdomen/mrcp">MRCP（胆嚢・膵臓）</a></li>
+          <li><a href="#" data-page="abdomen/kidney">腎臓・副腎・腎血管MRA</a></li>
+        </ul>
+      </li>
+      <li class="nav-section">
+        <span class="nav-category">骨盤</span>
+        <ul>
+          <li><a href="#" data-page="pelvis/uterus">子宮・卵巣</a></li>
+          <li><a href="#" data-page="pelvis/prostate">前立腺・膀胱</a></li>
+          <li><a href="#" data-page="pelvis/rectum">直腸・虫垂</a></li>
+        </ul>
+      </li>
+      <li class="nav-section">
+        <span class="nav-category">脊椎</span>
+        <ul>
+          <li><a href="#" data-page="spine/cervical">頸椎（C-SPINE）</a></li>
+          <li><a href="#" data-page="spine/thoracic">胸椎（Th-SPINE）</a></li>
+          <li><a href="#" data-page="spine/lumbar">腰椎（L-SPINE）</a></li>
+          <li><a href="#" data-page="spine/total">全脊椎・胸腰椎</a></li>
+        </ul>
+      </li>
+      <li class="nav-section">
+        <span class="nav-category">業務・管理</span>
+        <ul>
+          <li><a href="#" data-page="checkin">着替え・問診・入室手順</a></li>
+          <li><a href="#" data-page="contrast">造影剤換算表</a></li>
+          <li><a href="#" data-page="minutes/index">議事録</a></li>
+          <li><a href="#" data-page="updates/index">変更履歴</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- メインコンテンツ -->
+<main class="main-content" id="mainContent">
+
+  <!-- ホームページ -->
+  <div id="homePage" class="page-home">
+
+    <!-- 最新情報バナー -->
+    <section class="updates-banner">
+      <h2 class="section-title">📢 最新の更新</h2>
+      <div id="recentUpdates" class="updates-list">
+        <div class="update-item">
+          <span class="update-date">2025-11-13</span>
+          <span class="update-tag tag-update">改訂</span>
+          <span class="update-text">MRI業務マニュアル 第5版 公開</span>
+        </div>
+      </div>
+      <a href="#" data-page="updates/index" class="btn-more">変更履歴をすべて見る →</a>
+    </section>
+
+    <!-- 緊急・よく使う -->
+    <section class="quick-access">
+      <h2 class="section-title">⚡ よく使う検査</h2>
+      <div class="quick-grid">
+        <a href="#" data-page="head/stroke" class="quick-card emergency">
+          <span class="quick-icon">🧠</span>
+          <span class="quick-label">脳卒中<br><small>Brain CI</small></span>
+        </a>
+        <a href="#" data-page="head/aneurysm" class="quick-card">
+          <span class="quick-icon">🔬</span>
+          <span class="quick-label">動脈瘤<br><small>Aneurysm</small></span>
+        </a>
+        <a href="#" data-page="abdomen/mrcp" class="quick-card">
+          <span class="quick-icon">🫀</span>
+          <span class="quick-label">MRCP<br><small>胆嚢・膵臓</small></span>
+        </a>
+        <a href="#" data-page="pelvis/prostate" class="quick-card">
+          <span class="quick-icon">🔭</span>
+          <span class="quick-label">前立腺<br><small>Prostate</small></span>
+        </a>
+        <a href="#" data-page="checkin" class="quick-card">
+          <span class="quick-icon">📋</span>
+          <span class="quick-label">問診手順<br><small>入室まで</small></span>
+        </a>
+        <a href="#" data-page="contrast" class="quick-card">
+          <span class="quick-icon">💉</span>
+          <span class="quick-label">造影剤換算<br><small>ガドビスト</small></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 部位別カテゴリ -->
+    <section class="category-section">
+      <h2 class="section-title">📂 部位別マニュアル</h2>
+      <div class="category-grid">
+
+        <div class="category-card">
+          <div class="category-header cat-head">
+            <span class="cat-icon">🧠</span>
+            <h3>頭部・脳</h3>
+          </div>
+          <ul>
+            <li><a href="#" data-page="head/stroke">脳卒中（Brain CI / Rapid）</a></li>
+            <li><a href="#" data-page="head/aneurysm">動脈瘤・VA解離</a></li>
+            <li><a href="#" data-page="head/vertigo">めまい・顔面神経麻痺</a></li>
+            <li><a href="#" data-page="head/epilepsy">てんかん・認知症</a></li>
+            <li><a href="#" data-page="head/headache">頭痛・小脳変性</a></li>
+            <li><a href="#" data-page="head/tumor">脳腫瘍（単純・造影）</a></li>
+          </ul>
+        </div>
+
+        <div class="category-card">
+          <div class="category-header cat-ear">
+            <span class="cat-icon">👂</span>
+            <h3>内耳・副鼻腔・下垂体</h3>
+          </div>
+          <ul>
+            <li><a href="#" data-page="inner_ear/iac">内耳・IAC（難聴・聴神経腫瘍）</a></li>
+            <li><a href="#" data-page="sinus/sinus">副鼻腔（単純・造影）</a></li>
+            <li><a href="#" data-page="pituitary/pituitary">下垂体（単純・造影）</a></li>
+            <li><a href="#" data-page="orbit/orbit">眼窩（単純・造影）</a></li>
+          </ul>
+        </div>
+
+        <div class="category-card">
+          <div class="category-header cat-neck">
+            <span class="cat-icon">🦴</span>
+            <h3>頸部・MRA</h3>
+          </div>
+          <ul>
+            <li><a href="#" data-page="neck/neck">頸部（単純・造影）</a></li>
+            <li><a href="#" data-page="neck/mra">頭部〜大動脈弓MRA</a></li>
+          </ul>
+        </div>
+
+        <div class="category-card">
+          <div class="category-header cat-chest">
+            <span class="cat-icon">❤️</span>
+            <h3>胸部・心臓・乳房</h3>
+          </div>
+          <ul>
+            <li><a href="#" data-page="chest/chest">縦隔（単純・造影）</a></li>
+            <li><a href="#" data-page="heart/heart">心臓・冠動脈</a></li>
+            <li><a href="#" data-page="breast/breast">乳房（腹臥位・仰臥位）</a></li>
+          </ul>
+        </div>
+
+        <div class="category-card">
+          <div class="category-header cat-abdomen">
+            <span class="cat-icon">🫁</span>
+            <h3>腹部</h3>
+          </div>
+          <ul>
+            <li><a href="#" data-page="abdomen/liver">肝臓・SPIO・EOB Primovist</a></li>
+            <li><a href="#" data-page="abdomen/mrcp">MRCP（胆嚢・膵臓）</a></li>
+            <li><a href="#" data-page="abdomen/kidney">腎臓・副腎・腎血管MRA</a></li>
+          </ul>
+        </div>
+
+        <div class="category-card">
+          <div class="category-header cat-pelvis">
+            <span class="cat-icon">🔭</span>
+            <h3>骨盤</h3>
+          </div>
+          <ul>
+            <li><a href="#" data-page="pelvis/uterus">子宮・卵巣</a></li>
+            <li><a href="#" data-page="pelvis/prostate">前立腺・膀胱</a></li>
+            <li><a href="#" data-page="pelvis/rectum">直腸・虫垂</a></li>
+          </ul>
+        </div>
+
+        <div class="category-card">
+          <div class="category-header cat-spine">
+            <span class="cat-icon">🦷</span>
+            <h3>脊椎</h3>
+          </div>
+          <ul>
+            <li><a href="#" data-page="spine/cervical">頸椎（C-SPINE）</a></li>
+            <li><a href="#" data-page="spine/thoracic">胸椎（Th-SPINE）</a></li>
+            <li><a href="#" data-page="spine/lumbar">腰椎（L-SPINE）</a></li>
+            <li><a href="#" data-page="spine/total">全脊椎・胸腰椎</a></li>
+          </ul>
+        </div>
+
+        <div class="category-card">
+          <div class="category-header cat-ops">
+            <span class="cat-icon">📋</span>
+            <h3>業務・管理</h3>
+          </div>
+          <ul>
+            <li><a href="#" data-page="checkin">着替え・問診・入室手順</a></li>
+            <li><a href="#" data-page="contrast">造影剤換算表（ガドビスト）</a></li>
+            <li><a href="#" data-page="minutes/index">議事録</a></li>
+            <li><a href="#" data-page="updates/index">変更履歴</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>八尾市立病院 放射線技術科 MRI業務マニュアル 第5版（2025年11月13日改訂）</p>
+      <p class="footer-note">※ このサイトは施設内スタッフ専用です。患者情報は含まれません。</p>
+    </footer>
+  </div>
+
+  <!-- マニュアルページ（動的に表示） -->
+  <div id="manualPage" class="page-manual hidden">
+    <div class="manual-layout">
+      <!-- TOC（PC用サイドバー） -->
+      <aside class="toc-sidebar" id="tocSidebar">
+        <div class="toc-title">目次</div>
+        <nav id="tocNav"></nav>
+      </aside>
+      <!-- コンテンツ -->
+      <article class="manual-article" id="manualArticle">
+        <div id="manualContent"></div>
+      </article>
+    </div>
+  </div>
+
+</main>
+
+<!-- 画像ライトボックス -->
+<div id="lightbox" class="lightbox hidden">
+  <div class="lightbox-overlay"></div>
+  <div class="lightbox-content">
+    <img id="lightboxImg" src="" alt="">
+    <button class="lightbox-close">✕</button>
+  </div>
+</div>
+
+<!-- TOC モバイル表示ボタン -->
+<button class="fab-toc" id="fabToc" title="目次">≡</button>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

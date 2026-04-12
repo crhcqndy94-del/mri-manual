@@ -1,0 +1,188 @@
+[
+  {
+    "page": "head/stroke",
+    "title": "脳卒中 Brain CI / Rapid",
+    "section": "頭部・脳",
+    "content": "脳梗塞 脳出血 TIA 一過性脳虚血発作 Smart Brain Rapid Motion Free DWI FLAIR T2W T2*W MRA 鼻根部 橋下縁 Willis動脈輪 内頚動脈 long MRA SWI microbleeds 脂肪塞栓 アミロイドアンギオパチー"
+  },
+  {
+    "page": "head/aneurysm",
+    "title": "動脈瘤・椎骨動脈解離 Brain aneurysm / VA dissection",
+    "section": "頭部・脳",
+    "content": "動脈瘤 椎骨動脈解離 Head AN MRA Willis動脈輪 BPAS COR 3D T2 DRIVE CISS 内頚動脈 外頚 long MRA"
+  },
+  {
+    "page": "head/vertigo",
+    "title": "めまい・顔面神経麻痺 Brain Vertigo/dizziness",
+    "section": "頭部・脳",
+    "content": "めまい 顔面神経麻痺 3D T2 DRIVE CISS 脳神経 基準線 AVF 動静脈瘻 耳鳴り"
+  },
+  {
+    "page": "head/epilepsy",
+    "title": "てんかん・認知症・アルツハイマー・パーキンソン Brain epilepsy Alzheimer",
+    "section": "頭部・脳",
+    "content": "てんかん 認知症 アルツハイマー パーキンソン 海馬 3D FLAIR COR AC-PC T1 SAG 脳幹"
+  },
+  {
+    "page": "head/headache",
+    "title": "頭痛・小脳変性・脳萎縮 Brain headache",
+    "section": "頭部・脳",
+    "content": "頭痛 小脳変性 脳萎縮 T1 SAG 脳幹 BRAIN VIEW"
+  },
+  {
+    "page": "head/neuro",
+    "title": "動眼〜外転神経麻痺・嗅覚障害・iNPH",
+    "section": "頭部・脳",
+    "content": "動眼神経 外転神経 神経麻痺 複視 三叉神経 嗅覚障害 嗅神経 嗅球 iNPH 正常圧水頭症 AC-PC CISS synchro 同期"
+  },
+  {
+    "page": "head/tumor",
+    "title": "脳腫瘍（単純・造影）Brain tumor",
+    "section": "頭部・脳",
+    "content": "脳腫瘍 造影 CE 3D T1W TFE MPR 鼻根部 頭頂部 角度つけない FLAIR T2* T1 SE"
+  },
+  {
+    "page": "head/child",
+    "title": "小児頭部・STA-MCA術後",
+    "section": "頭部・脳",
+    "content": "小児 乳幼児 under6M over6M Comfort Torn Motion Free Rapid 眠剤 真空固定具 STA-MCA術後 ASL 4D TRANCE 吻合部 CAS"
+  },
+  {
+    "page": "inner_ear/iac",
+    "title": "内耳・IAC（難聴・聴神経腫瘍・顔面神経・真珠腫）",
+    "section": "内耳・顎関節",
+    "content": "内耳 難聴 聴神経腫瘍 顔面神経 耳鳴り 突発性難聴 真珠腫 3D T2 DRIVE CISS IAC CP angle TSE DWI 脳幹 同期 FOV160"
+  },
+  {
+    "page": "sinus/sinus",
+    "title": "副鼻腔MRI（単純・造影）Sinus",
+    "section": "副鼻腔",
+    "content": "副鼻腔 上顎洞 前頭洞 歯列 TSE DWI 3D T2 COR mDixon MPR Dynamic"
+  },
+  {
+    "page": "pituitary/pituitary",
+    "title": "下垂体MRI（単純・造影）Pituitary",
+    "section": "下垂体・眼窩",
+    "content": "下垂体 低身長 ホルモン 下垂体柄 Dynamic インジェクター 同時スタート 15秒 19.MainServer 3T リファレンス"
+  },
+  {
+    "page": "orbit/orbit",
+    "title": "眼窩MRI（単純・造影）Orbit",
+    "section": "下垂体・眼窩",
+    "content": "眼窩 視神経 視交叉 眼窩腫瘍 DWI SPLICE T2 3D VIEW COR Dynamic 目を動かさない"
+  },
+  {
+    "page": "neck/neck",
+    "title": "頸部MRI（単純・造影・唾液腺造影）NECK",
+    "section": "頸部・MRA",
+    "content": "頸部 甲状腺 唾液腺 耳下腺 舌下腺 ワルトン管 ステノン管 舌 リンパ節 3D COR TSE DWI mDixon Sialography"
+  },
+  {
+    "page": "neck/mra",
+    "title": "頭部〜大動脈弓MRA・Black Blood",
+    "section": "頸部・MRA",
+    "content": "大動脈弓 Willis動脈輪 Head MRA Neck MRA Arch MRA 4Stack Mobiview mDixon Vane Black Blood T1 T2 BB プラーク 狭窄"
+  },
+  {
+    "page": "chest/chest",
+    "title": "縦隔MRI（単純・造影）Thorax",
+    "section": "胸部・心臓",
+    "content": "縦隔 胸部 Head First T2 SSH DWI mDixon BFE SAG Dyn eTHRIVE STIR"
+  },
+  {
+    "page": "heart/heart",
+    "title": "心臓MRI・冠動脈MRI Heart Coronary",
+    "section": "胸部・心臓",
+    "content": "心臓 冠動脈 CINE LAX SAX 4CH T2 STIR BB T1 mapping T2 mapping LGE PSIR Look Locker 呼吸同期"
+  },
+  {
+    "page": "breast/breast",
+    "title": "乳房MRI（腹臥位・仰臥位・インプラント）Breast",
+    "section": "乳房",
+    "content": "乳房 腹臥位 仰臥位 インプラント DWIBS T2 SPAIR AI Dyn mDixon Dynamic 30秒 再構成 Subtra SAG RADIAL MIP TIC 生理 月経 エキスパンダー"
+  },
+  {
+    "page": "abdomen/liver",
+    "title": "肝臓MRI・SPIO・EOB Primovist",
+    "section": "腹部",
+    "content": "肝臓 SPIO Resovist EOB Primovist 横隔膜同期 gap eTHRIVE T1 dual DWI navigator Dynamic Bolus 1.5ml 肝細胞相 総胆管 ENCAGE"
+  },
+  {
+    "page": "abdomen/mrcp",
+    "title": "MRCP（胆嚢・膵臓）",
+    "section": "腹部",
+    "content": "MRCP 胆嚢 膵臓 胆管 総胆管 膵管 3D GRASE 2D thick60mm 息止め 絶食 食事 膵頭部 膵体部 膵尾部 オブリーク 横隔膜同期 息止め不可 BH disable"
+  },
+  {
+    "page": "abdomen/kidney",
+    "title": "腎臓・副腎・腎血管MRA",
+    "section": "腹部",
+    "content": "腎臓 副腎 腎血管 MRA MRU 水腎症 腎盂腫瘍 AML 血管脂肪腫 脂肪抑制 b TRANCE 呼吸同期 Trigger"
+  },
+  {
+    "page": "pelvis/uterus",
+    "title": "子宮・卵巣MRI",
+    "section": "骨盤",
+    "content": "子宮 卵巣 筋腫 頸癌 体癌 内膜ポリープ 短軸 長軸 海馬 前投薬 Motion Free 3D T2 Dynamic SAG チョコレート嚢胞 デルモイド 充実性"
+  },
+  {
+    "page": "pelvis/prostate",
+    "title": "前立腺・膀胱MRI",
+    "section": "骨盤",
+    "content": "前立腺 膀胱 LION DWI b2000 3D T2 Dynamic IMRT 19.MainServer 15秒 1.5ml 短軸 短短軸 腫瘍 トラコバンド 専用クッション"
+  },
+  {
+    "page": "pelvis/rectum",
+    "title": "直腸・虫垂・直腸痔瘻MRI",
+    "section": "骨盤",
+    "content": "直腸 直腸癌 虫垂 虫垂炎 痔瘻 肛門管 短軸 脂肪抑制 MPR 前投薬 3D T2 CE"
+  },
+  {
+    "page": "spine/cervical",
+    "title": "頸椎MRI（C-SPINE）・腕神経叢",
+    "section": "脊椎",
+    "content": "頸椎 C-SPINE ヘルニア 椎体 圧迫骨折 メタ DWIBS T2* T2 TRA SAG STIR 術後 金属 腕神経叢 引き抜き損傷 Nerve View OPLLL FRACTURE"
+  },
+  {
+    "page": "spine/thoracic",
+    "title": "胸椎MRI（Th-SPINE）",
+    "section": "脊椎",
+    "content": "胸椎 Th-SPINE ヘルニア 圧迫骨折 メタ DWIBS 骨髄腫 mDixon T2 SAG STIR 動静脈奇形 BPAS"
+  },
+  {
+    "page": "spine/lumbar",
+    "title": "腰椎MRI（L-SPINE）・坐骨神経痛",
+    "section": "脊椎",
+    "content": "腰椎 L-SPINE ヘルニア 坐骨神経痛 Sciatica 椎体 圧迫骨折 メタ DWIBS T2 SAG STIR 3Stack Nerve View WATS Neurography"
+  },
+  {
+    "page": "spine/total",
+    "title": "全脊椎・胸腰椎MRI",
+    "section": "脊椎",
+    "content": "全脊椎 胸腰椎 Total SPINE Th-L SPINE 2Stack Mobiview DWIBS 骨髄腫 mDixon T2 SAG"
+  },
+  {
+    "page": "checkin",
+    "title": "着替え・問診・入室手順",
+    "section": "業務・管理",
+    "content": "問診 着替え 入室 金属チェック ヒートテック エアリズム インプラント エキスパンダー 前投薬 ボースデル ニトロダーム ニコチネル マニキュア ネイル カラーコンタクト 妊娠 造影 同意書 アレルギー 喘息"
+  },
+  {
+    "page": "contrast",
+    "title": "造影剤換算表（ガドビスト）",
+    "section": "業務・管理",
+    "content": "ガドビスト 造影剤 体重 換算 シリンジ 5ml 7.5ml 10ml 0.1ml 同意書"
+  },
+  {
+    "page": "minutes/index",
+    "title": "議事録",
+    "section": "業務・管理",
+    "content": "議事録 カンファレンス 改訂 変更点"
+  },
+  {
+    "page": "updates/index",
+    "title": "変更履歴",
+    "section": "業務・管理",
+    "content": "変更履歴 更新 改訂 追加 削除"
+  }
+]
