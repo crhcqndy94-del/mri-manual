@@ -251,6 +251,16 @@ function postprocessContent(container) {
     a.target = '_blank';
     a.rel = 'noopener';
   });
+
+  // Markdown内の内部リンクをSPAナビゲーションに変換
+  container.querySelectorAll('a[href]').forEach(a => {
+    const href = a.getAttribute('href');
+    if (!href || href.startsWith('http') || href.startsWith('#') || href.startsWith('mailto:')) return;
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigateTo(href);
+    });
+  });
 }
 
 // ===== TOC 生成 =====
