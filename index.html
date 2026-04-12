@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="assets/images/icon-192.png">
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 
@@ -26,6 +25,7 @@
     <button class="search-toggle" id="searchToggleBtn" aria-label="検索">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
     </button>
+    <button class="logout-btn" id="logoutBtn" aria-label="ログアウト" title="ログアウト" onclick="sessionStorage.removeItem('mri_session');window.location.replace('login.html');" style="background:none;border:none;color:#fff;cursor:pointer;padding:8px;opacity:0.8;font-size:13px;">⏻</button>
   </div>
   <!-- 検索バー -->
   <div class="search-bar" id="searchBar">
@@ -335,22 +335,23 @@
 <button class="fab-toc" id="fabToc" title="目次">≡</button>
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script src="script.js"></script>
 <script>
-  // Netlify Identity 認証ゲート
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on('init', function(user) {
-      if (!user) {
-        window.netlifyIdentity.open();
+  // 認証チェック（ログインしていない場合はlogin.htmlへ）
+  (function() {
+    var session = sessionStorage.getItem('mri_session');
+    if (!session) { window.location.replace('login.html'); return; }
+    try {
+      var s = JSON.parse(session);
+      if (!s.expires || s.expires < Date.now()) {
+        sessionStorage.removeItem('mri_session');
+        window.location.replace('login.html');
       }
-    });
-    window.netlifyIdentity.on('login', function() {
-      window.netlifyIdentity.close();
-    });
-    window.netlifyIdentity.on('logout', function() {
-      window.netlifyIdentity.open();
-    });
-  }
+    } catch(e) {
+      sessionStorage.removeItem('mri_session');
+      window.location.replace('login.html');
+    }
+  })();
 </script>
+<script src="script.js"></script>
 </body>
 </html>

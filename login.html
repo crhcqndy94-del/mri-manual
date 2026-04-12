@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1a5276">
+  <title>ログイン | MRI業務マニュアル</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Hiragino Sans', 'Yu Gothic', sans-serif;
+      background: linear-gradient(135deg, #1a5276 0%, #154360 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .login-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 48px 40px 40px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .logo-icon {
+      width: 64px; height: 64px;
+      background: #1a5276;
+      border-radius: 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+    .logo h1 {
+      font-size: 18px;
+      color: #1a5276;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .logo p {
+      font-size: 13px;
+      color: #7f8c8d;
+      margin-top: 4px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 6px;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 15px;
+      transition: border-color 0.2s;
+      outline: none;
+    }
+    input[type="text"]:focus, input[type="password"]:focus {
+      border-color: #1a5276;
+    }
+    .btn-login {
+      width: 100%;
+      padding: 14px;
+      background: #1a5276;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 8px;
+    }
+    .btn-login:hover { background: #154360; }
+    .btn-login:disabled { background: #bdc3c7; cursor: not-allowed; }
+    .error-msg {
+      background: #fdecea;
+      border: 1px solid #e74c3c;
+      color: #c0392b;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      margin-top: 16px;
+      display: none;
+    }
+    .footer-note {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 12px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-card">
+    <div class="logo">
+      <div class="logo-icon">🏥</div>
+      <h1>MRI業務マニュアル</h1>
+      <p>放射線技術科 職員専用</p>
+    </div>
+    <form id="loginForm" autocomplete="on">
+      <div class="form-group">
+        <label for="username">ユーザーID</label>
+        <input type="text" id="username" name="username" placeholder="ユーザーIDを入力" autocomplete="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">パスワード</label>
+        <input type="password" id="password" name="password" placeholder="パスワードを入力" autocomplete="current-password" required>
+      </div>
+      <button type="submit" class="btn-login" id="loginBtn">ログイン</button>
+      <div class="error-msg" id="errorMsg">ユーザーIDまたはパスワードが正しくありません</div>
+    </form>
+    <p class="footer-note">パスワードを忘れた場合は管理者にお問い合わせください</p>
+  </div>
+
+  <script>
+    // ============================================================
+    // 認証設定（管理者がここを編集してアカウントを管理）
+    // パスワードはSHA-256ハッシュで保存
+    // 新しいハッシュの生成: https://emn178.github.io/online-tools/sha256.html
+    // ============================================================
+    const AUTH_USERS = {
+      // ユーザーID: SHA-256ハッシュ(パスワード)
+      // 初期パスワード: admin → MRI-Admin-2025!
+      'admin':  'a53af3d241332675af2ffc065d3047d55eb0dc879c92a57dd88dda1f4b183e0f',
+      // 初期パスワード: staff → MRI-Staff-2025!
+      'staff':  '0465b8a07d314688254221b0f895be469f1ea7051a3c5f4806a145755ff162d1',
+    };
+    // セッション有効期間（時間）
+    const SESSION_HOURS = 12;
+    // ============================================================
+
+    // 既にログイン済みならメインページへ
+    const session = sessionStorage.getItem('mri_session');
+    if (session) {
+      try {
+        const s = JSON.parse(session);
+        if (s.expires > Date.now()) {
+          window.location.href = 'index.html';
+        } else {
+          sessionStorage.removeItem('mri_session');
+        }
+      } catch(e) { sessionStorage.removeItem('mri_session'); }
+    }
+
+    async function sha256(message) {
+      const msgBuffer = new TextEncoder().encode(message);
+      const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    document.getElementById('loginForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = document.getElementById('loginBtn');
+      const errMsg = document.getElementById('errorMsg');
+      btn.disabled = true;
+      btn.textContent = '確認中...';
+      errMsg.style.display = 'none';
+
+      const username = document.getElementById('username').value.trim().toLowerCase();
+      const password = document.getElementById('password').value;
+
+      const hash = await sha256(password);
+      const expected = AUTH_USERS[username];
+
+      if (expected && hash === expected) {
+        // ログイン成功
+        sessionStorage.setItem('mri_session', JSON.stringify({
+          user: username,
+          expires: Date.now() + SESSION_HOURS * 60 * 60 * 1000
+        }));
+        window.location.href = 'index.html';
+      } else {
+        errMsg.style.display = 'block';
+        btn.disabled = false;
+        btn.textContent = 'ログイン';
+        document.getElementById('password').value = '';
+        document.getElementById('password').focus();
+      }
+    });
+  </script>
+</body>
+</html>
