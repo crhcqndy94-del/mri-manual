@@ -1,48 +1,48 @@
 # T1マッピング解析（T1 / ECVマッピング）
 
 :::info シリーズ番号
-T1マッピング送信時：**1** ／ ECVマッピング送信時：**4**
+T1マッピング送信時：1 ／ ECVマッピング送信時：4
 :::
 
 ---
 
 ## 1. 解析開始
 
-1. **T1 native と enhanced を両方選択**（この時 Images が一番多いものを選ぶ）
-2. 左上の **Analysis** をプルダウン
-3. **Cardiac MR Analysis** を選択
-4. Select Protocol は **T1** を選択
+1. T1 native と enhanced を両方選択（この時 Images が一番多いものを選ぶ）
+2. 左上の Analysis をプルダウン
+3. Cardiac MR Analysis を選択
+4. Select Protocol は T1 を選択
 5. Native と enhanced の両方が選んだ状態になっていることを確認
-6. **Start Analysis Application** を選択
+6. Start Analysis Application を選択
 
 ---
 
 ## 2. Motion Correction
 
-7. **Reject map and go to (Re)Calculate** を選択
-8. **Motion Correction** を選択
-9. 上段：Series Num が上段の **Selected Map** をプルダウン → **Corrected** を選択
-10. 下段を選択 → **Motion Correction** をクリック
-11. 下段も同様に **Selected Map** をプルダウン → **Corrected** を選択
-12. 左上の **⇨** をクリック
+7. Reject map and go to (Re)Calculate を選択
+8. Motion Correction を選択
+9. 上段：Series Num が上段の Selected Map をプルダウン → Corrected を選択
+10. 下段を選択 → Motion Correction をクリック
+11. 下段も同様に Selected Map をプルダウン → Corrected を選択
+12. 左上の ⇨ をクリック
 
 ---
 
 ## 3. 心筋トレース（内壁・外壁）
 
-13. **Draw Local spline contour** を選択
-14. **Draw LV endo contour** を選択（内壁）
+13. Draw Local spline contour を選択
+14. Draw LV endo contour を選択（内壁）
 
 ### Native 内壁
 15. 画面左上の native 3枚の内壁をトレースする
-    - ※ **乳頭筋は心筋に含めずトレース**すること
+    - ※ 乳頭筋は心筋に含めずトレースすること
 
 ### Enhanced 内壁
 16. 画面右上の enhanced 3枚の内壁もトレースする
     - ※ 乳頭筋は心筋に含めずトレース
 
 ### 外壁
-17. **Draw LV epi contour** を選択（外壁）
+17. Draw LV epi contour を選択（外壁）
 18. 画面左上の native 3枚の外壁をトレースする
 19. 画面右上の enhanced 3枚の外壁もトレースする
 
@@ -50,7 +50,7 @@ T1マッピング送信時：**1** ／ ECVマッピング送信時：**4**
 
 ## 4. 血液トレース
 
-20. **Draw Blood contour** を選択
+20. Draw Blood contour を選択
 21. 画面左上の Native 3枚のうち、左上の画像の血液を囲む（大きさは適当で可）
     - ※ 左上の画像で上手く血液が囲えない時は右上の画像でも可
 22. 右側の enhanced の3枚のうち、左上の画像の血液を囲む（大きさは適当で可）
@@ -60,18 +60,18 @@ T1マッピング送信時：**1** ／ ECVマッピング送信時：**4**
 
 ## 5. セグメント化
 
-23. 画面左側の native の画像を選択した上で **Create new spoke** をクリック（セグメント数は **6**）
+23. 画面左側の native の画像を選択した上で Create new spoke をクリック（セグメント数は 6）
 24. native がセグメント化されたことを確認
 25. 同様に画面右側の enhanced をセグメント化する
-26. **Accept segmentation and to results** を選択
+26. Accept segmentation and to results を選択
 
 ---
 
 ## 6. 解析結果・ヘマトクリット入力
 
 27. 右側に解析結果が表示される
-28. 電子カルテを参照に、患者の **ヘマトクリット値** を **Set hematocrit(%)** に入力
-29. **Set hematocrit(%)** を選択
+28. 電子カルテを参照に、患者の ヘマトクリット値 を Set hematocrit(%) に入力
+29. Set hematocrit(%) を選択
 30. ε（ECV）が反映されていることを確認
 
 ---
@@ -79,8 +79,8 @@ T1マッピング送信時：**1** ／ ECVマッピング送信時：**4**
 ## 7. カラースケール設定（rainbow2）
 
 31. 右のアイコンをクリック
-32. **T1 Native の Low を「500」、High を「1500」**、ε の Low を「0」、High を「60」に変更して **Apply**
-33. 中央のアイコンをプルダウン → **rainbow2** を選択
+32. T1 Native の Low を「500」、High を「1500」、ε の Low を「0」、High を「60」に変更して Apply
+33. 中央のアイコンをプルダウン → rainbow2 を選択
 34. ブルズアイの色が反映されたことを確認
 
 ---
@@ -88,51 +88,51 @@ T1マッピング送信時：**1** ／ ECVマッピング送信時：**4**
 ## 8. T1 Map 保存
 
 35. 左側の心筋の中部のスライスをクリック
-36. 右下の表の Slice No が **「2」** になっていることを確認
-37. この画面を全画面保存（**Save screen snapshot as**）
-38. File name に **「T1 Map」** を入力
-39. 保存先は **「Local」**
+36. 右下の表の Slice No が 「2」 になっていることを確認
+37. この画面を全画面保存（Save screen snapshot as）
+38. File name に 「T1 Map」 を入力
+39. 保存先は 「Local」
 
 ---
 
 ## 9. ECV Map 保存
 
-40. ブルズアイ上で **右クリック → ε を選択**
+40. ブルズアイ上で 右クリック → ε を選択
 41. ε のブルズアイが表示される
     - カラースケールが下限0・上限60になっているか確認
     - ※ N/A になっている場合は左側の画面をクリック
 42. 左側の心筋の中部のスライスをクリック
-43. 右下の表の Slice No が **「2」** になっていることを確認
-44. この画面を全画面保存（**Save screen snapshot as**）
-45. File name に **「ECV Map」** を入力
-46. 保存先は **「Local」**
+43. 右下の表の Slice No が 「2」 になっていることを確認
+44. この画面を全画面保存（Save screen snapshot as）
+45. File name に 「ECV Map」 を入力
+46. 保存先は 「Local」
 
 ---
 
 ## 10. ISP での保存・送信
 
-47. **Exit** をクリック → **Save & Exit** をクリック
-48. 保存先は **Local**
-49. 保存した T1 と ε を選択して 右クリック → **Copy To** を選択
+47. Exit をクリック → Save & Exit をクリック
+48. 保存先は Local
+49. 保存した T1 と ε を選択して 右クリック → Copy To を選択
     - ※ 他に解析を行う場合はまとめて送信すること
-50. 検像を選択 → **OK**
+50. 検像を選択 → OK
 
 ---
 
 ## 11. 検像端末での操作
 
 :::warning 転送保留を忘れずに
-送信したら必ず **転送保留** してください！
+送信したら必ず 転送保留 してください！
 既に原画像が送信されているので、「一部転送済」「未転送」「転送済」を選択しないと該当患者が検像端末に表示されない場合があります。
 :::
 
 ### T1マッピング
-51. 転送保留した後、**T1マッピング上で右クリック → タグ編集**
-52. シリーズ番号に **「1」** を入力 → 保存 → はい
+51. 転送保留した後、T1マッピング上で右クリック → タグ編集
+52. シリーズ番号に 「1」 を入力 → 保存 → はい
 
 ### ECVマッピング
-53. **ECVマッピング上で右クリック → タグ編集**
-54. シリーズ番号に **「4」** を入力 → 保存 → はい → 送信
+53. ECVマッピング上で右クリック → タグ編集
+54. シリーズ番号に 「4」 を入力 → 保存 → はい → 送信
 
 ---
 
@@ -140,9 +140,9 @@ T1マッピング送信時：**1** ／ ECVマッピング送信時：**4**
 
 | 解析 | シリーズ番号 |
 |------|:-----------:|
-| T1マッピング解析 | **1** |
+| T1マッピング解析 | 1 |
 | T2マッピング解析 | 2 |
 | T2\*マッピング解析 | 3 |
-| ECVマッピング解析 | **4** |
+| ECVマッピング解析 | 4 |
 | EF解析 | 5 |
 | ストレイン解析 | 6 |
