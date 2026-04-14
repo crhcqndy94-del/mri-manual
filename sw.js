@@ -1,7 +1,7 @@
 /* Service Worker - MRI業務マニュアル PWA */
-const CACHE_NAME = 'mri-manual-v2';
+const CACHE_NAME = 'mri-manual-v3';
 
-// キャッシュするファイル一覧（コアアセット）
+// オフライン時のコアアセット（インストール時にキャッシュ）
 const CORE_ASSETS = [
   '/mri-manual/',
   '/mri-manual/index.html',
@@ -23,7 +23,7 @@ self.addEventListener('install', event => {
   self.skipWaiting();
 });
 
-// アクティベート：古いキャッシュを削除
+// アクティベート：古いキャッシュを全て削除
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(keys =>
@@ -35,37 +35,46 @@ self.addEventListener('activate', event => {
   self.clients.claim();
 });
 
-// フェッチ：キャッシュファースト（Markdownファイル・HTML）
+// フェッチ：ネットワーク優先（network-first）
+// → 常に最新をサーバーから取得し、オフライン時だけキャッシュにフォールバック
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
 
-  // 同一オリジンのみキャッシュ
-  if (url.origin !== location.origin && !url.hostname.includes('jsdelivr.net')) {
+  // 外部CDN（jsdelivr）はキャッシュ優先でよい
+  if (url.hostname.includes('jsdelivr.net')) {
+    event.respondWith(
+      caches.match(event.request).then(cached => {
+        return cached || fetch(event.request).then(response => {
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
+          return response;
+        });
+      })
+    );
     return;
   }
 
-  event.respondWith(
-    caches.match(event.request).then(cached => {
-      if (cached) return cached;
-
-      return fetch(event.request).then(response => {
-        // Markdownファイルはキャッシュに保存
-        if (response.ok && (
-          event.request.url.endsWith('.md') ||
-          event.request.url.endsWith('.json') ||
-          event.request.url.includes('/docs/')
-        )) {
+  // 同一オリジンのリクエストはネットワーク優先
+  if (url.origin === location.origin) {
+    event.respondWith(
+      fetch(event.request)
+        .then(response => {
+          // 成功したらキャッシュを更新しておく（次回オフライン用）
           const clone = response.clone();
           caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
-        }
-        return response;
-      }).catch(() => {
-        // オフライン時：HTMLリクエストにはindexを返す
-        if (event.request.destination === 'document') {
-          return caches.match('/mri-manual/index.html');
-        }
-        return new Response('オフライン中です', { status: 503 });
-      });
-    })
-  );
+          return response;
+        })
+        .catch(() => {
+          // オフライン時：キャッシュにフォールバック
+          return caches.match(event.request).then(cached => {
+            if (cached) return cached;
+            // HTMLリクエストにはトップページを返す
+            if (event.request.destination === 'document') {
+              return caches.match('/mri-manual/index.html');
+            }
+            return new Response('オフライン中です', { status: 503 });
+          });
+        })
+    );
+  }
 });
