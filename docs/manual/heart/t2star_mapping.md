@@ -4,7 +4,7 @@
 
 ---
 
-## ステップ1: T2*mapを選択 / （この時Imagesが⼀番多いものを選ぶ）
+## ステップ1: T2*mapを選択（この時Imagesが⼀番多いものを選ぶ）
 
 ![](assets/images/heart/t2star_mapping/p02.jpg)
 
@@ -28,7 +28,7 @@
 
 ---
 
-## ステップ5: ProtocolにT2*がない場合は / 画⾯上部の「⇦」をクリック
+## ステップ5: ProtocolにT2*がない場合は画⾯上部の「⇦」をクリック
 
 ![](assets/images/heart/t2star_mapping/p06.jpg)
 
@@ -84,7 +84,7 @@
 
 ---
 
-## ステップ13: Reject map and go to (Re)Calculate / を選択
+## ステップ13: Reject map and go to (Re)Calculateを選択
 
 ![](assets/images/heart/t2star_mapping/p14.jpg)
 
@@ -114,7 +114,7 @@
 
 ---
 
-## ステップ18: T1マッピング同様に内壁・ / 外壁をトレースする
+## ステップ18: T1マッピング同様に内壁・外壁をトレースする
 
 ![](assets/images/heart/t2star_mapping/p19.jpg)
 
@@ -122,7 +122,7 @@
 
 ---
 
-## ステップ19: Create new spokeをクリック / セグメント数は「6」
+## ステップ19: Create new spokeをクリックセグメント数は「6」
 
 ![](assets/images/heart/t2star_mapping/p20.jpg)
 
@@ -134,7 +134,7 @@
 
 ---
 
-## ステップ21: を選択 / Accept segmentation and to results
+## ステップ21: を選択Accept segmentation and to results
 
 ![](assets/images/heart/t2star_mapping/p22.jpg)
 
@@ -152,7 +152,7 @@
 
 ---
 
-## ステップ24: T2*のLowを「0」Highを「80」 / に変更してApply
+## ステップ24: T2*のLowを「0」Highを「80」に変更してApply
 
 ![](assets/images/heart/t2star_mapping/p25.jpg)
 
@@ -170,7 +170,7 @@
 
 ---
 
-## ステップ27: ブルズアイの⾊が反映された / のを確認
+## ステップ27: ブルズアイの⾊が反映されたのを確認
 
 ![](assets/images/heart/t2star_mapping/p28.jpg)
 
@@ -188,7 +188,7 @@
 
 ---
 
-## ステップ30: この画⾯を全画⾯保存 / (Save screen snapshot as)
+## ステップ30: この画⾯を全画⾯保存(Save screen snapshot as)
 
 ![](assets/images/heart/t2star_mapping/p31.jpg)
 
@@ -224,7 +224,7 @@
 
 ---
 
-## ステップ36: 保存した画像上で / 右クリック→Copy Toを選択
+## ステップ36: 保存した画像上で右クリック→Copy Toを選択
 
 ![](assets/images/heart/t2star_mapping/p37.jpg)
 
@@ -238,7 +238,7 @@
 
 ---
 
-## ステップ38: ここからは検像端末での操作 / 送信したら転送保留してください！ / 「未転送」「転送済」を選択しないと該当患者が検像 / 端末に表⽰されない場合があります。
+## ステップ38: ここからは検像端末での操作送信したら転送保留してください！「未転送」「転送済」を選択しないと該当患者が検像端末に表⽰されない場合があります。
 
 ![](assets/images/heart/t2star_mapping/p39.jpg)
 
@@ -246,7 +246,7 @@
 
 ---
 
-## ステップ39: 転送保留した後 / 解析結果上で右クリック→タグ編集
+## ステップ39: 転送保留した後解析結果上で右クリック→タグ編集
 
 ![](assets/images/heart/t2star_mapping/p40.jpg)
 
@@ -264,13 +264,13 @@
 
 ---
 
-## ステップ42: はいをクリック→送信してください / その他の解析結果をまとめて送信する時はシリーズNoを変更して⼀括で送信してください
+## ステップ42: はいをクリック→送信してくださいその他の解析結果をまとめて送信する時はシリーズNoを変更して⼀括で送信してください
 
 ![](assets/images/heart/t2star_mapping/p43.jpg)
 
 ---
 
-## ステップ43: 解析 シリーズ番号 / T1マッピング解析 １ / T2マッピング解析 ２ / T2*マッピング解析 ３ / ΕCVマッピング解析 ４ / EF解析 ５ / ストレイン解析 ６
+## ステップ43: 解析 シリーズ番号T1マッピング解析 １T2マッピング解析 ２T2*マッピング解析 ３ΕCVマッピング解析 ４EF解析 ５ストレイン解析 ６
 
 ![](assets/images/heart/t2star_mapping/p44.jpg)
 

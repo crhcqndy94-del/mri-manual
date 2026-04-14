@@ -1,5 +1,5 @@
 /* Service Worker - MRI業務マニュアル PWA */
-const CACHE_NAME = 'mri-manual-v3';
+const CACHE_NAME = 'mri-manual-v4';
 
 // オフライン時のコアアセット（インストール時にキャッシュ）
 const CORE_ASSETS = [

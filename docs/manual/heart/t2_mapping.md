@@ -4,7 +4,7 @@
 
 ---
 
-## ステップ1: T2mapを選択 / （この時Imagesが⼀番多いものを選ぶ）
+## ステップ1: T2mapを選択（この時Imagesが⼀番多いものを選ぶ）
 
 ![](assets/images/heart/t2_mapping/p02.jpg)
 
@@ -34,7 +34,7 @@
 
 ---
 
-## ステップ6: Reject map and go to (Re)Calculate / を選択
+## ステップ6: Reject map and go to (Re)Calculateを選択
 
 ![](assets/images/heart/t2_mapping/p07.jpg)
 
@@ -64,7 +64,7 @@
 
 ---
 
-## ステップ11: T1マッピング同様に内壁・ / 外壁をトレースする
+## ステップ11: T1マッピング同様に内壁・外壁をトレースする
 
 ![](assets/images/heart/t2_mapping/p12.jpg)
 
@@ -72,7 +72,7 @@
 
 ---
 
-## ステップ12: Create new spokeをクリック / セグメント数は「6」
+## ステップ12: Create new spokeをクリックセグメント数は「6」
 
 ![](assets/images/heart/t2_mapping/p13.jpg)
 
@@ -84,7 +84,7 @@
 
 ---
 
-## ステップ14: を選択 / Accept segmentation and to results
+## ステップ14: を選択Accept segmentation and to results
 
 ![](assets/images/heart/t2_mapping/p15.jpg)
 
@@ -102,7 +102,7 @@
 
 ---
 
-## ステップ17: T2のLowを「0」Highを「120」 / に変更してApply
+## ステップ17: T2のLowを「0」Highを「120」に変更してApply
 
 ![](assets/images/heart/t2_mapping/p18.jpg)
 
@@ -120,7 +120,7 @@
 
 ---
 
-## ステップ20: ブルズアイの⾊が反映された / のを確認
+## ステップ20: ブルズアイの⾊が反映されたのを確認
 
 ![](assets/images/heart/t2_mapping/p21.jpg)
 
@@ -138,7 +138,7 @@
 
 ---
 
-## ステップ23: この画⾯を全画⾯保存 / (Save screen snapshot as)
+## ステップ23: この画⾯を全画⾯保存(Save screen snapshot as)
 
 ![](assets/images/heart/t2_mapping/p24.jpg)
 
@@ -174,7 +174,7 @@
 
 ---
 
-## ステップ29: 保存した画像上で / 右クリック→Copy Toを選択
+## ステップ29: 保存した画像上で右クリック→Copy Toを選択
 
 ![](assets/images/heart/t2_mapping/p30.jpg)
 
@@ -188,7 +188,7 @@
 
 ---
 
-## ステップ31: ここからは検像端末での操作 / 送信したら転送保留してください！ / 「未転送」「転送済」を選択しないと該当患者が検像 / 端末に表⽰されない場合があります。
+## ステップ31: ここからは検像端末での操作送信したら転送保留してください！「未転送」「転送済」を選択しないと該当患者が検像端末に表⽰されない場合があります。
 
 ![](assets/images/heart/t2_mapping/p32.jpg)
 
@@ -196,7 +196,7 @@
 
 ---
 
-## ステップ32: 転送保留した後 / 解析結果上で右クリック→タグ編集
+## ステップ32: 転送保留した後解析結果上で右クリック→タグ編集
 
 ![](assets/images/heart/t2_mapping/p33.jpg)
 
@@ -214,13 +214,13 @@
 
 ---
 
-## ステップ35: はいをクリック→送信してください / その他の解析結果をまとめて送信する時はシリーズNoを変更して⼀括で送信してください
+## ステップ35: はいをクリック→送信してくださいその他の解析結果をまとめて送信する時はシリーズNoを変更して⼀括で送信してください
 
 ![](assets/images/heart/t2_mapping/p36.jpg)
 
 ---
 
-## ステップ36: 解析 シリーズ番号 / T1マッピング解析 １ / T2マッピング解析 ２ / T2*マッピング解析 ３ / ΕCVマッピング解析 ４ / EF解析 ５ / ストレイン解析 ６
+## ステップ36: 解析 シリーズ番号T1マッピング解析 １T2マッピング解析 ２T2*マッピング解析 ３ΕCVマッピング解析 ４EF解析 ５ストレイン解析 ６
 
 ![](assets/images/heart/t2_mapping/p37.jpg)
 

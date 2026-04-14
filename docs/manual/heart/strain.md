@@ -4,7 +4,7 @@
 
 ---
 
-## ステップ1: CINE Sag・CINE Sax・CINE 4CHを / 選択し、Strainをクリック
+## ステップ1: CINE Sag・CINE Sax・CINE 4CHを選択し、Strainをクリック
 
 ![](assets/images/heart/strain/p02.jpg)
 
@@ -16,13 +16,13 @@
 
 ---
 
-## ステップ3: CINE Sag・SAx・4CHをそれぞれ / ドラック&ドロップ
+## ステップ3: CINE Sag・SAx・4CHをそれぞれドラック&ドロップ
 
 ![](assets/images/heart/strain/p04.jpg)
 
 ---
 
-## ステップ4: Automatically segmentにチェックが / ⼊っている状態で「Next」をクリッ / ク
+## ステップ4: Automatically segmentにチェックが⼊っている状態で「Next」をクリック
 
 ![](assets/images/heart/strain/p05.jpg)
 
@@ -40,13 +40,13 @@
 
 ---
 
-## ステップ7: Segments Modeから / 「AHA-17 Segments Model」を選択
+## ステップ7: Segments Modeから「AHA-17 Segments Model」を選択
 
 ![](assets/images/heart/strain/p08.jpg)
 
 ---
 
-## ステップ8: Save Reportをクリックし / レポートを保存
+## ステップ8: Save Reportをクリックしレポートを保存
 
 ![](assets/images/heart/strain/p09.jpg)
 
@@ -58,7 +58,7 @@
 
 ---
 
-## ステップ10: 患者⼀覧に戻り、 / 該当患者を右クリック→View
+## ステップ10: 患者⼀覧に戻り、該当患者を右クリック→View
 
 ![](assets/images/heart/strain/p11.jpg)
 
@@ -72,31 +72,31 @@
 
 ---
 
-## ステップ12: 1枚⽬から順番に右クリック / →Mark Image as Key Image / 1枚⽬
+## ステップ12: 1枚⽬から順番に右クリック→Mark Image as Key Image1枚⽬
 
 ![](assets/images/heart/strain/p13.jpg)
 
 ---
 
-## ステップ13: 1枚⽬から順番に右クリック / →Mark Image as Key Image / 2枚⽬
+## ステップ13: 1枚⽬から順番に右クリック→Mark Image as Key Image2枚⽬
 
 ![](assets/images/heart/strain/p14.jpg)
 
 ---
 
-## ステップ14: 1枚⽬から順番に右クリック / →Mark Image as Key Image / 3枚⽬
+## ステップ14: 1枚⽬から順番に右クリック→Mark Image as Key Image3枚⽬
 
 ![](assets/images/heart/strain/p15.jpg)
 
 ---
 
-## ステップ15: 1枚⽬から順番に右クリック / →Mark Image as Key Image / 4枚⽬
+## ステップ15: 1枚⽬から順番に右クリック→Mark Image as Key Image4枚⽬
 
 ![](assets/images/heart/strain/p16.jpg)
 
 ---
 
-## ステップ16: 1枚⽬から順番に右クリック / →Mark Image as Key Image / 5枚⽬（合計５枚）
+## ステップ16: 1枚⽬から順番に右クリック→Mark Image as Key Image5枚⽬（合計５枚）
 
 ![](assets/images/heart/strain/p17.jpg)
 
@@ -128,7 +128,7 @@
 
 ---
 
-## ステップ21: ここからは検像端末での操作 / 送信したら転送保留してください！ / 「未転送」「転送済」を選択しないと該当患者が検像端 / 末に表⽰されない場合があります。 / ストレイン解析のモダリティは『OT』 / になるので、並べ替えの時は注意してください。
+## ステップ21: ここからは検像端末での操作送信したら転送保留してください！「未転送」「転送済」を選択しないと該当患者が検像端末に表⽰されない場合があります。ストレイン解析のモダリティは『OT』になるので、並べ替えの時は注意してください。
 
 ![](assets/images/heart/strain/p22.jpg)
 
@@ -136,7 +136,7 @@
 
 ---
 
-## ステップ22: 転送保留した後 / 解析結果上で右クリック→タグ編集
+## ステップ22: 転送保留した後解析結果上で右クリック→タグ編集
 
 ![](assets/images/heart/strain/p23.jpg)
 
@@ -154,13 +154,13 @@
 
 ---
 
-## ステップ25: はいをクリック→送信してください / その他の解析結果をまとめて送信する時はシリーズNoを変更して⼀括で送信してください
+## ステップ25: はいをクリック→送信してくださいその他の解析結果をまとめて送信する時はシリーズNoを変更して⼀括で送信してください
 
 ![](assets/images/heart/strain/p26.jpg)
 
 ---
 
-## ステップ26: 解析 シリーズ番号 / T1マッピング解析 １ / T2マッピング解析 ２ / T2*マッピング解析 ３ / ΕCVマッピング解析 ４ / EF解析 ５ / ストレイン解析 ６
+## ステップ26: 解析 シリーズ番号T1マッピング解析 １T2マッピング解析 ２T2*マッピング解析 ３ΕCVマッピング解析 ４EF解析 ５ストレイン解析 ６
 
 ![](assets/images/heart/strain/p27.jpg)
 

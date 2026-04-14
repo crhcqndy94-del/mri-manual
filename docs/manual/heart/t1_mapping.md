@@ -4,7 +4,7 @@
 
 ---
 
-## ステップ1: T1 nativeとenhancedを両⽅選択 / （この時Imagesが⼀番多いものを選ぶ）
+## ステップ1: T1 nativeとenhancedを両⽅選択（この時Imagesが⼀番多いものを選ぶ）
 
 ![](assets/images/heart/t1_mapping/p02.jpg)
 
@@ -28,7 +28,7 @@
 
 ---
 
-## ステップ5: Nativeとenhancedの両⽅を選ん / だ状態にする
+## ステップ5: Nativeとenhancedの両⽅を選んだ状態にする
 
 ![](assets/images/heart/t1_mapping/p06.jpg)
 
@@ -40,7 +40,7 @@
 
 ---
 
-## ステップ7: Reject map and go to (Re)Calculate / を選択
+## ステップ7: Reject map and go to (Re)Calculateを選択
 
 ![](assets/images/heart/t1_mapping/p08.jpg)
 
@@ -52,7 +52,7 @@
 
 ---
 
-## ステップ9: Series Numが上段のSelected / Mapをプルダウン
+## ステップ9: Series Numが上段のSelectedMapをプルダウン
 
 ![](assets/images/heart/t1_mapping/p10.jpg)
 
@@ -76,7 +76,7 @@
 
 ---
 
-## ステップ13: 下段も同様にSelected Mapをプ / ルダウン→Correctedを選択
+## ステップ13: 下段も同様にSelected Mapをプルダウン→Correctedを選択
 
 ![](assets/images/heart/t1_mapping/p14.jpg)
 
@@ -100,7 +100,7 @@
 
 ---
 
-## ステップ17: 画⾯左上のnative3枚の内壁を / トレースする / 乳頭筋
+## ステップ17: 画⾯左上のnative3枚の内壁をトレースする乳頭筋
 
 ![](assets/images/heart/t1_mapping/p18.jpg)
 
@@ -108,7 +108,7 @@
 
 ---
 
-## ステップ18: 画⾯右上のenhanced3枚の内壁 / もトレースする
+## ステップ18: 画⾯右上のenhanced3枚の内壁もトレースする
 
 ![](assets/images/heart/t1_mapping/p19.jpg)
 
@@ -122,13 +122,13 @@
 
 ---
 
-## ステップ20: 画⾯左上のnative3枚の外壁を / トレースする
+## ステップ20: 画⾯左上のnative3枚の外壁をトレースする
 
 ![](assets/images/heart/t1_mapping/p21.jpg)
 
 ---
 
-## ステップ21: 画⾯右上のenhanced3枚の外壁 / もトレースする
+## ステップ21: 画⾯右上のenhanced3枚の外壁もトレースする
 
 ![](assets/images/heart/t1_mapping/p22.jpg)
 
@@ -140,7 +140,7 @@
 
 ---
 
-## ステップ23: 画⾯左上のNative3枚のうち、左上の画像の / ⾎液を囲む（⼤きさは適当で可）
+## ステップ23: 画⾯左上のNative3枚のうち、左上の画像の⾎液を囲む（⼤きさは適当で可）
 
 ![](assets/images/heart/t1_mapping/p24.jpg)
 
@@ -148,7 +148,7 @@
 
 ---
 
-## ステップ24: 右側のenhancedの3枚のうち、左上の画像 / の⾎液を囲む（⼤きさは適当で可）
+## ステップ24: 右側のenhancedの3枚のうち、左上の画像の⾎液を囲む（⼤きさは適当で可）
 
 ![](assets/images/heart/t1_mapping/p25.jpg)
 
@@ -156,25 +156,25 @@
 
 ---
 
-## ステップ25: 画⾯左側のnativeの画像を選択し / た上でCreate new spokeをクリック / セグメント数は「6」
+## ステップ25: 画⾯左側のnativeの画像を選択した上でCreate new spokeをクリックセグメント数は「6」
 
 ![](assets/images/heart/t1_mapping/p26.jpg)
 
 ---
 
-## ステップ26: nativeがセグメント化されたこ / とを確認
+## ステップ26: nativeがセグメント化されたことを確認
 
 ![](assets/images/heart/t1_mapping/p27.jpg)
 
 ---
 
-## ステップ27: 同様に画⾯右側のenhancedを / セグメント化する
+## ステップ27: 同様に画⾯右側のenhancedをセグメント化する
 
 ![](assets/images/heart/t1_mapping/p28.jpg)
 
 ---
 
-## ステップ28: を選択 / Accept segmentation and to results
+## ステップ28: を選択Accept segmentation and to results
 
 ![](assets/images/heart/t1_mapping/p29.jpg)
 
@@ -186,7 +186,7 @@
 
 ---
 
-## ステップ30: 電⼦カルテを参照に、患者の / ヘマトクリット値を に⼊⼒ / Set hematocrit(%)
+## ステップ30: 電⼦カルテを参照に、患者のヘマトクリット値を に⼊⼒Set hematocrit(%)
 
 ![](assets/images/heart/t1_mapping/p31.jpg)
 
@@ -210,7 +210,7 @@
 
 ---
 
-## ステップ34: T1 NativeのLowを「500」Highを「1500」 / εのLowを「0」Highを「60」に変更して / Apply。
+## ステップ34: T1 NativeのLowを「500」Highを「1500」εのLowを「0」Highを「60」に変更してApply。
 
 ![](assets/images/heart/t1_mapping/p35.jpg)
 
@@ -228,7 +228,7 @@
 
 ---
 
-## ステップ37: ブルズアイの⾊が反映された / のを確認
+## ステップ37: ブルズアイの⾊が反映されたのを確認
 
 ![](assets/images/heart/t1_mapping/p38.jpg)
 
@@ -246,7 +246,7 @@
 
 ---
 
-## ステップ40: この画⾯を全画⾯保存 / (Save screen snapshot as)
+## ステップ40: この画⾯を全画⾯保存(Save screen snapshot as)
 
 ![](assets/images/heart/t1_mapping/p41.jpg)
 
@@ -276,7 +276,7 @@
 
 ---
 
-## ステップ45: εのブルズアイが表⽰される / カラースケールが下限０上限60になっているか確認 / N/Aになってた場合は左側の画⾯をクリックしてください / N/Aならばこの辺りをクリック
+## ステップ45: εのブルズアイが表⽰されるカラースケールが下限０上限60になっているか確認NAになってた場合は左側の画⾯をクリックしてくださいNAならばこの辺りをクリック
 
 ![](assets/images/heart/t1_mapping/p46.jpg)
 
@@ -294,7 +294,7 @@
 
 ---
 
-## ステップ48: この画⾯を全画⾯保存 / (Save screen snapshot as)
+## ステップ48: この画⾯を全画⾯保存(Save screen snapshot as)
 
 ![](assets/images/heart/t1_mapping/p49.jpg)
 
@@ -330,7 +330,7 @@
 
 ---
 
-## ステップ54: 保存したT1とεを選択して / 右クリック→Copy Toを選択
+## ステップ54: 保存したT1とεを選択して右クリック→Copy Toを選択
 
 ![](assets/images/heart/t1_mapping/p55.jpg)
 
@@ -344,7 +344,7 @@
 
 ---
 
-## ステップ56: ここからは検像端末での操作 / 送信したら転送保留してください！ / 「未転送」「転送済」を選択しないと該当患者が検像 / 端末に表⽰されない場合があります。
+## ステップ56: ここからは検像端末での操作送信したら転送保留してください！「未転送」「転送済」を選択しないと該当患者が検像端末に表⽰されない場合があります。
 
 ![](assets/images/heart/t1_mapping/p57.jpg)
 
@@ -352,7 +352,7 @@
 
 ---
 
-## ステップ57: 転送保留した後 / T1マッピング上で右クリック→タグ編集
+## ステップ57: 転送保留した後T1マッピング上で右クリック→タグ編集
 
 ![](assets/images/heart/t1_mapping/p58.jpg)
 
@@ -394,13 +394,13 @@
 
 ---
 
-## ステップ64: はいをクリック→送信してください / その他の解析結果をまとめて送信する時はシリーズNoを変更して⼀括で送信してください
+## ステップ64: はいをクリック→送信してくださいその他の解析結果をまとめて送信する時はシリーズNoを変更して⼀括で送信してください
 
 ![](assets/images/heart/t1_mapping/p65.jpg)
 
 ---
 
-## ステップ65: 解析 シリーズ番号 / T1マッピング解析 １ / T2マッピング解析 ２ / T2*マッピング解析 ３ / ΕCVマッピング解析 ４ / EF解析 ５ / ストレイン解析 ６
+## ステップ65: 解析 シリーズ番号T1マッピング解析 １T2マッピング解析 ２T2*マッピング解析 ３ΕCVマッピング解析 ４EF解析 ５ストレイン解析 ６
 
 ![](assets/images/heart/t1_mapping/p66.jpg)
 
