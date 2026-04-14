@@ -14,25 +14,38 @@ iPad内のマニュアル・動画参照
 
 ## ■ 心臓 — Heart
 
-| # | シーケンス | FOV | スライス厚 | 枚数 | 備考 |
-|---|-----------|-----|-----------|------|------|
-| ① | CINE TRA | 350 | 10mm | 5枚 | |
-| ② | CINE SAG | 350 | 8mm | 3枚 | |
-| ③ | CINE LAX | 350 | 8mm | 3枚 | |
-| ④ | CINE SAX | 350 | 8mm | 12枚 | |
-| ⑤ | CINE 4CH | 350 | 8mm | 3枚 | |
-| ⑥ | T2 STIR BB | 350 | 8mm | 5枚 | |
-| ⑦ | T1 mapping（native） | 300 | 10mm | 3枚 | |
-| ⑧ | T2 mapping | 300 | 10mm | 3枚 | |
-| ⑨ | T2* mapping | 300 | 10mm | 3枚 | |
-| ⑩ | Look Locker | 360 | 12mm | 1枚 | 呼吸同期 |
-| ⑪ | 2D LGE SAG | 350 | 8mm | 10枚 | 呼吸同期 |
-| ⑫ | 2D LGE LAX | 350 | 8mm | 10枚 | 呼吸同期 |
-| ⑬ | 2D LGE SAX | 350 | 8mm | 10枚 | 呼吸同期 |
-| ⑭ | PSIR SAG | 350 | 10mm | 10枚 | |
-| ⑮ | PSIR LAX | 350 | 10mm | 10枚 | |
-| ⑯ | PSIR SAX | 350 | 10mm | 10枚 | |
-| ⑰ | T1 mapping（enhance） | 300 | 10mm | 3枚 | |
+| # | シーケンス | 部位 | 備考 |
+|---|-----------|------|------|
+| ① | Survey | — | 呼気停止 |
+| ② | Reference Scan | — | 呼気停止・息止め後に心拍数入力 |
+| ③ | CINE TRA | 体軸水平断像 | Volume Shimは左室に絞る |
+| ④ | CINE SAG | 垂直長軸像 | ③のみで位置合わせ |
+| ⑤ | CINE LAx | 水平長軸像 | ④のみで位置合わせ |
+| ⑥ | CINE SAx | 左室短軸像 | ⑤のみで位置合わせ・心尖部〜心基部 |
+| ⑦ | CINE 4ch | 四腔長軸像 | ⑥のみで位置合わせ |
+| ⑧ | T2W_STIR_BB | 左室短軸像 | 1息止め1スライス |
+| ⑨ | T1map_native | 左室短軸像 | 心尖部・中央部・心基部 3枚 |
+| ⑩ | T2 map | 左室短軸像 | ⑨と同じ位置・厚み・Gap |
+| ⑪ | T2*map | 左室短軸像 | ⑨と同じ位置・厚み・Gap |
+| — | 造影剤注入 | — | ストップウォッチ計時開始 |
+| ⑫ | Look Locker_RT | 左室短軸中央部 | 造影後4分（大柄な患者は3分）から開始 |
+| ⑬ | LGE_2D_Ssh_RT SAG | 垂直長軸像 | TFE prepulse delay：null+50ms |
+| ⑭ | LGE_2D_Ssh_RT LAx | 水平長軸像 | TFE prepulse delay：null+55ms |
+| ⑮ | LGE_2D_Ssh_RT SAx | 左室短軸像 | TFE prepulse delay：null+60ms |
+| ⑯ | PSIR_Sax 2D Ssh_RT AI | 左室短軸像 | CR画像のみ送信 |
+| ⑰ | PSIR_SAG 2D Ssh_RT AI | 垂直長軸像 | CR画像のみ送信 |
+| ⑱ | PSIR_LAx 2D Ssh_RT AI | 水平長軸像 | CR画像のみ送信 |
+| ⑲ | T1map_enhanced | 左室短軸像 | 造影後10〜15分・⑨と同じ位置 |
+
+:::info 検像送信シーケンス
+Survey / CINE TRA / CINE SAG / CINE LAx / CINE SAx / CINE 4ch / T2W_STIR_BB / LGE_2D_Ssh_RT SAG・LAx・SAx / PSIR CR画像のみ
+
+※ 各種マッピング・LookLockerは送信不要
+:::
+
+:::warning Null point 決定
+LookLocker撮像後、速やかに正常心筋にROIを設定しTICよりNull pointを決定すること（造影後1分以内に完了）
+:::
 
 [VIDEO:心臓MRI 撮像手順（iPad内動画参照）]
 
