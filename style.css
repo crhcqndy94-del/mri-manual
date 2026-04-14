@@ -199,6 +199,18 @@ a:hover { text-decoration: underline; }
   margin-top: 6px;
 }
 
+.disclaimer-bar {
+  background: #fef9e7;
+  border: 1px solid #f9e79f;
+  border-left: 4px solid #f39c12;
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  font-size: 0.78rem;
+  color: #7d6608;
+  margin: 0 0 16px;
+  line-height: 1.6;
+}
+
 .nav-sub-header {
   display: block;
   padding: 6px 20px 2px;

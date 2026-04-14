@@ -1,80 +1,58 @@
 /* Service Worker - MRI業務マニュアル PWA */
-const CACHE_NAME = 'mri-manual-v4';
+// バージョンを変える = 古いキャッシュ全削除 + 強制更新
+const CACHE_NAME = 'mri-manual-v5';
 
-// オフライン時のコアアセット（インストール時にキャッシュ）
-const CORE_ASSETS = [
-  '/mri-manual/',
-  '/mri-manual/index.html',
-  '/mri-manual/style.css',
-  '/mri-manual/script.js',
-  '/mri-manual/manifest.json',
+// キャッシュするのは外部CDNのみ（ローカルファイルは常にネットワークから取得）
+const CDN_CACHE = [
   'https://cdn.jsdelivr.net/npm/marked/marked.min.js',
 ];
 
-// インストール：コアアセットをキャッシュ
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
-      return cache.addAll(CORE_ASSETS).catch(err => {
-        console.warn('SW: Some assets failed to cache', err);
-      });
+      return cache.addAll(CDN_CACHE).catch(() => {});
     })
   );
-  self.skipWaiting();
+  self.skipWaiting(); // 即時アクティベート
 });
 
-// アクティベート：古いキャッシュを全て削除
 self.addEventListener('activate', event => {
   event.waitUntil(
+    // 古いバージョンのキャッシュを全て削除
     caches.keys().then(keys =>
-      Promise.all(
-        keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k))
-      )
-    )
+      Promise.all(keys.map(k => caches.delete(k)))
+    ).then(() => self.clients.claim())
   );
-  self.clients.claim();
 });
 
-// フェッチ：ネットワーク優先（network-first）
-// → 常に最新をサーバーから取得し、オフライン時だけキャッシュにフォールバック
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
 
-  // 外部CDN（jsdelivr）はキャッシュ優先でよい
+  // 外部CDN（marked.js）のみキャッシュ優先
   if (url.hostname.includes('jsdelivr.net')) {
     event.respondWith(
-      caches.match(event.request).then(cached => {
-        return cached || fetch(event.request).then(response => {
-          const clone = response.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
-          return response;
-        });
-      })
+      caches.match(event.request).then(cached =>
+        cached || fetch(event.request).then(res => {
+          const clone = res.clone();
+          caches.open(CACHE_NAME).then(c => c.put(event.request, clone));
+          return res;
+        })
+      )
     );
     return;
   }
 
-  // 同一オリジンのリクエストはネットワーク優先
+  // ローカルファイルは常にネットワーク優先（キャッシュしない）
+  // オフライン時のみキャッシュフォールバック
   if (url.origin === location.origin) {
     event.respondWith(
-      fetch(event.request)
-        .then(response => {
-          // 成功したらキャッシュを更新しておく（次回オフライン用）
-          const clone = response.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
-          return response;
-        })
-        .catch(() => {
-          // オフライン時：キャッシュにフォールバック
-          return caches.match(event.request).then(cached => {
-            if (cached) return cached;
-            // HTMLリクエストにはトップページを返す
-            if (event.request.destination === 'document') {
-              return caches.match('/mri-manual/index.html');
-            }
-            return new Response('オフライン中です', { status: 503 });
-          });
-        })
+      fetch(event.request).catch(() =>
+        caches.match(event.request).then(cached =>
+          cached || (event.request.destination === 'document'
+            ? caches.match('/mri-manual/index.html')
+            : new Response('オフライン中です', { status: 503 }))
+        )
+      )
     );
   }
 });

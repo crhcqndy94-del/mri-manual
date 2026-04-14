@@ -1,7 +1,7 @@
 {
   "name": "MRI業務マニュアル",
   "short_name": "MRIマニュアル",
-  "description": "八尾市立病院 放射線技術科 MRI業務マニュアル",
+  "description": "MRI業務マニュアル（個人まとめ）",
   "start_url": "/mri-manual/",
   "display": "standalone",
   "background_color": "#f8f9fa",
