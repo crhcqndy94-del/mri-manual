@@ -26,25 +26,21 @@
 
 ![](assets/images/heart/t2star_mapping/p07.jpg)
 
-※ ProtocolにT2*がない場合
 
 ---
 
 ![](assets/images/heart/t2star_mapping/p08.jpg)
 
-※ ProtocolにT2*がない場合
 
 ---
 
 ![](assets/images/heart/t2star_mapping/p09.jpg)
 
-※ ProtocolにT2*がない場合
 
 ---
 
 ![](assets/images/heart/t2star_mapping/p10.jpg)
 
-※ ProtocolにT2*がない場合
 
 ---
 
@@ -82,7 +78,6 @@
 
 ![](assets/images/heart/t2star_mapping/p19.jpg)
 
-※この時、乳頭筋は⼼筋に含めずトレースしてください。
 
 ---
 
@@ -156,7 +151,6 @@
 
 ![](assets/images/heart/t2star_mapping/p37.jpg)
 
-※他に解析を⾏う場合はまとめて送信してください
 
 ---
 
@@ -166,7 +160,6 @@
 
 ![](assets/images/heart/t2star_mapping/p39.jpg)
 
-※既に原画像が送信されているので、「⼀部転送済」
 
 ---
 
@@ -188,6 +181,5 @@
 
 ![](assets/images/heart/t2star_mapping/p44.jpg)
 
-★シリーズ番号変更⼀覧★
 
 ---

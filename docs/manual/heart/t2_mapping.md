@@ -46,7 +46,6 @@
 
 ![](assets/images/heart/t2_mapping/p12.jpg)
 
-※この時、乳頭筋は⼼筋に含めずトレースしてください。
 
 ---
 
@@ -120,7 +119,6 @@
 
 ![](assets/images/heart/t2_mapping/p30.jpg)
 
-※他に解析を⾏う場合はまとめて送信してください
 
 ---
 
@@ -130,7 +128,6 @@
 
 ![](assets/images/heart/t2_mapping/p32.jpg)
 
-※既に原画像が送信されているので、「⼀部転送済」
 
 ---
 
@@ -152,6 +149,5 @@
 
 ![](assets/images/heart/t2_mapping/p37.jpg)
 
-★シリーズ番号変更⼀覧★
 
 ---

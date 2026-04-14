@@ -30,7 +30,6 @@
 
 ![](assets/images/heart/isp_cardiac/p08.jpg)
 
-※Automatic segmentation が選択できない場合はSemi –automatic segmentationでも可
 
 ---
 
@@ -196,7 +195,6 @@
 
 ![](assets/images/heart/isp_cardiac/p49.jpg)
 
-※他に解析を⾏う場合はまとめて送信してください
 
 ---
 
@@ -206,7 +204,6 @@
 
 ![](assets/images/heart/isp_cardiac/p51.jpg)
 
-※既に原画像が送信されているので、「⼀部転送済」
 
 ---
 
@@ -228,6 +225,5 @@
 
 ![](assets/images/heart/isp_cardiac/p56.jpg)
 
-★シリーズ番号変更⼀覧★
 
 ---

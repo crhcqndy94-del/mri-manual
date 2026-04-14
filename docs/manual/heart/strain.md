@@ -46,7 +46,6 @@
 
 ![](assets/images/heart/strain/p12.jpg)
 
-※表⽰後4画⾯表⽰から最⼤化して、1画⾯表⽰に変更してください。
 
 ---
 
@@ -80,7 +79,6 @@
 
 ![](assets/images/heart/strain/p20.jpg)
 
-※他に解析を⾏う場合はまとめて送信してください
 
 ---
 
@@ -90,7 +88,6 @@
 
 ![](assets/images/heart/strain/p22.jpg)
 
-※既に原画像が送信されているので、「⼀部転送済」
 
 ---
 
@@ -112,6 +109,5 @@
 
 ![](assets/images/heart/strain/p27.jpg)
 
-★シリーズ番号変更⼀覧★
 
 ---
