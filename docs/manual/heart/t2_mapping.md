@@ -1,321 +1,229 @@
 # T2マッピング解析
 
-## ステップ1
-
 ![](assets/images/heart/t2_mapping/p01.jpg)
-
-T2 mapping
 
 ---
 
-## ステップ2
+## ステップ1: T2mapを選択 / （この時Imagesが⼀番多いものを選ぶ）
 
 ![](assets/images/heart/t2_mapping/p02.jpg)
 
-T2mapを選択
-（この時Imagesが⼀番多いものを選ぶ）
-
 ---
 
-## ステップ3
+## ステップ2: 左上のAnalysisをプルダウン
 
 ![](assets/images/heart/t2_mapping/p03.jpg)
 
-左上のAnalysisをプルダウン
-
 ---
 
-## ステップ4
+## ステップ3: Cardiac MR Analysisを選択
 
 ![](assets/images/heart/t2_mapping/p04.jpg)
 
-Cardiac MR Analysisを選択
-
 ---
 
-## ステップ5
+## ステップ4: Select ProtocolはT2を選択
 
 ![](assets/images/heart/t2_mapping/p05.jpg)
 
-Select ProtocolはT2を選択
-
 ---
 
-## ステップ6
+## ステップ5: Start Analysis Applicationを選択
 
 ![](assets/images/heart/t2_mapping/p06.jpg)
 
-Start Analysis Applicationを選択
-
 ---
 
-## ステップ7
+## ステップ6: Reject map and go to (Re)Calculate / を選択
 
 ![](assets/images/heart/t2_mapping/p07.jpg)
 
-Reject map and go to (Re)Calculate
-を選択
-
 ---
 
-## ステップ8
+## ステップ7: Motion Correctionを選択
 
 ![](assets/images/heart/t2_mapping/p08.jpg)
 
-Motion Correctionを選択
-
 ---
 
-## ステップ9
+## ステップ8: Selected Mapをプルダウン
 
 ![](assets/images/heart/t2_mapping/p09.jpg)
 
-Selected Mapをプルダウン
-
 ---
 
-## ステップ10
+## ステップ9: Correctedを選択
 
 ![](assets/images/heart/t2_mapping/p10.jpg)
 
-Correctedを選択
-
 ---
 
-## ステップ11
+## ステップ10: 左上の「⇨」をクリック
 
 ![](assets/images/heart/t2_mapping/p11.jpg)
 
-左上の「⇨」をクリック
-
 ---
 
-## ステップ12
+## ステップ11: T1マッピング同様に内壁・ / 外壁をトレースする
 
 ![](assets/images/heart/t2_mapping/p12.jpg)
 
-T1マッピング同様に内壁・
-外壁をトレースする
 ※この時、乳頭筋は⼼筋に含めずトレースしてください。
 
 ---
 
-## ステップ13
+## ステップ12: Create new spokeをクリック / セグメント数は「6」
 
 ![](assets/images/heart/t2_mapping/p13.jpg)
 
-Create new spokeをクリック
-セグメント数は「6」
-
 ---
 
-## ステップ14
+## ステップ13: セグメント化されたことを確認
 
 ![](assets/images/heart/t2_mapping/p14.jpg)
 
-セグメント化されたことを確認
-
 ---
 
-## ステップ15
+## ステップ14: を選択 / Accept segmentation and to results
 
 ![](assets/images/heart/t2_mapping/p15.jpg)
 
-を選択
-Accept segmentation and to results
-
 ---
 
-## ステップ16
+## ステップ15: 右側に解析結果が表⽰される
 
 ![](assets/images/heart/t2_mapping/p16.jpg)
 
-右側に解析結果が表⽰される
-
 ---
 
-## ステップ17
+## ステップ16: 右のアイコンをクリック
 
 ![](assets/images/heart/t2_mapping/p17.jpg)
 
-右のアイコンをクリック
-
 ---
 
-## ステップ18
+## ステップ17: T2のLowを「0」Highを「120」 / に変更してApply
 
 ![](assets/images/heart/t2_mapping/p18.jpg)
 
-T2のLowを「0」Highを「120」
-に変更してApply
-
 ---
 
-## ステップ19
+## ステップ18: 中央のアイコンをプルダウン
 
 ![](assets/images/heart/t2_mapping/p19.jpg)
 
-中央のアイコンをプルダウン
-
 ---
 
-## ステップ20
+## ステップ19: rainbow2を選択
 
 ![](assets/images/heart/t2_mapping/p20.jpg)
 
-rainbow2を選択
-
 ---
 
-## ステップ21
+## ステップ20: ブルズアイの⾊が反映された / のを確認
 
 ![](assets/images/heart/t2_mapping/p21.jpg)
 
-ブルズアイの⾊が反映された
-のを確認
-
 ---
 
-## ステップ22
+## ステップ21: 左側の⼼筋の中部のスライスをクリック
 
 ![](assets/images/heart/t2_mapping/p22.jpg)
 
-左側の⼼筋の中部のスライスをクリック
-
 ---
 
-## ステップ23
+## ステップ22: 右下の表のSlice Noが『2』になっている事を確認
 
 ![](assets/images/heart/t2_mapping/p23.jpg)
 
-右下の表のSlice Noが『2』になっている事を確認
-
 ---
 
-## ステップ24
+## ステップ23: この画⾯を全画⾯保存 / (Save screen snapshot as)
 
 ![](assets/images/heart/t2_mapping/p24.jpg)
 
-この画⾯を全画⾯保存
-(Save screen snapshot as)
-
 ---
 
-## ステップ25
+## ステップ24: File nameに『T2 Map』を⼊⼒
 
 ![](assets/images/heart/t2_mapping/p25.jpg)
 
-File nameに『T2 Map』を⼊⼒
-
 ---
 
-## ステップ26
+## ステップ25: 保存先は「Local」
 
 ![](assets/images/heart/t2_mapping/p26.jpg)
 
-保存先は「Local」
-
 ---
 
-## ステップ27
+## ステップ26: Exitをクリック
 
 ![](assets/images/heart/t2_mapping/p27.jpg)
 
-Exitをクリック
-
 ---
 
-## ステップ28
+## ステップ27: Save &Exitをクリック
 
 ![](assets/images/heart/t2_mapping/p28.jpg)
 
-Save &Exitをクリック
-
 ---
 
-## ステップ29
+## ステップ28: 保存先はLocal
 
 ![](assets/images/heart/t2_mapping/p29.jpg)
 
-保存先はLocal
-
 ---
 
-## ステップ30
+## ステップ29: 保存した画像上で / 右クリック→Copy Toを選択
 
 ![](assets/images/heart/t2_mapping/p30.jpg)
 
-保存した画像上で
-右クリック→Copy Toを選択
 ※他に解析を⾏う場合はまとめて送信してください
 
 ---
 
-## ステップ31
+## ステップ30: 検像を選択→「OK」
 
 ![](assets/images/heart/t2_mapping/p31.jpg)
 
-検像を選択→「OK」
-
 ---
 
-## ステップ32
+## ステップ31: ここからは検像端末での操作 / 送信したら転送保留してください！ / 「未転送」「転送済」を選択しないと該当患者が検像 / 端末に表⽰されない場合があります。
 
 ![](assets/images/heart/t2_mapping/p32.jpg)
 
-ここからは検像端末での操作
-送信したら転送保留してください！
 ※既に原画像が送信されているので、「⼀部転送済」
-「未転送」「転送済」を選択しないと該当患者が検像
-端末に表⽰されない場合があります。
 
 ---
 
-## ステップ33
+## ステップ32: 転送保留した後 / 解析結果上で右クリック→タグ編集
 
 ![](assets/images/heart/t2_mapping/p33.jpg)
 
-転送保留した後
-解析結果上で右クリック→タグ編集
-
 ---
 
-## ステップ34
+## ステップ33: シリーズ番号に「2」を⼊⼒
 
 ![](assets/images/heart/t2_mapping/p34.jpg)
 
-シリーズ番号に「2」を⼊⼒
-
 ---
 
-## ステップ35
+## ステップ34: 保存をクリック
 
 ![](assets/images/heart/t2_mapping/p35.jpg)
 
-保存をクリック
-
 ---
 
-## ステップ36
+## ステップ35: はいをクリック→送信してください / その他の解析結果をまとめて送信する時はシリーズNoを変更して⼀括で送信してください
 
 ![](assets/images/heart/t2_mapping/p36.jpg)
 
-はいをクリック→送信してください
-その他の解析結果をまとめて送信する時はシリーズNoを変更して⼀括で送信してください
-
 ---
 
-## ステップ37
+## ステップ36: 解析 シリーズ番号 / T1マッピング解析 １ / T2マッピング解析 ２ / T2*マッピング解析 ３ / ΕCVマッピング解析 ４ / EF解析 ５ / ストレイン解析 ６
 
 ![](assets/images/heart/t2_mapping/p37.jpg)
 
 ★シリーズ番号変更⼀覧★
-解析 シリーズ番号
-T1マッピング解析 １
-T2マッピング解析 ２
-T2*マッピング解析 ３
-ΕCVマッピング解析 ４
-EF解析 ５
-ストレイン解析 ６
 
 ---
