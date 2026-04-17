@@ -35,6 +35,7 @@ const PAGE_MAP = {
   'chest/chest':          'docs/manual/chest/chest.md',
   'heart/heart':          'docs/manual/heart/heart.md',
   'breast/breast':        'docs/manual/breast/breast.md',
+  'breast/analysis':      'docs/manual/breast/analysis.md',
   'abdomen/liver':        'docs/manual/abdomen/liver.md',
   'abdomen/mrcp':         'docs/manual/abdomen/mrcp.md',
   'abdomen/kidney':       'docs/manual/abdomen/kidney.md',

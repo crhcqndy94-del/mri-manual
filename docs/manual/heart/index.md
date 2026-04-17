@@ -1,14 +1,8 @@
-# 心臓MRI
+# 心臓MRI 解析
+
+ISP（syngo.via）を使用した心臓MRI解析マニュアルです。
 
 ---
-
-## 撮像
-
-- [心臓MRI 撮像マニュアル](heart/imaging)
-
----
-
-## 解析（ISP）
 
 - [EF解析（心機能）](heart/isp_cardiac)
 - [T1マッピング / ECVマッピング](heart/t1_mapping)
