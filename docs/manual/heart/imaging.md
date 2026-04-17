@@ -1,6 +1,14 @@
 # 心臓MRI 撮像マニュアル
 
-[VIDEO:https://github.com/crhcqndy94-del/mri-manual/releases/download/media/cardiac_720p.mp4:心臓MRI 撮像手順]
+<div class="video-block">
+<video controls playsinline preload="metadata" style="width:100%;display:block;background:#000;">
+<source src="https://github.com/crhcqndy94-del/mri-manual/releases/download/media/cardiac_720p.mp4" type="video/mp4">
+</video>
+<div class="video-footer">
+<span class="video-title">🎬 心臓MRI 撮像手順</span>
+<a class="video-download" href="https://github.com/crhcqndy94-del/mri-manual/releases/download/media/cardiac_720p.mp4" download="cardiac.mp4">⬇ ダウンロード</a>
+</div>
+</div>
 
 ---
 

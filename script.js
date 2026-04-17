@@ -13,6 +13,7 @@ if (typeof marked !== 'undefined') {
   marked.setOptions({
     breaks: true,
     gfm: true,
+    html: true,
   });
 }
 
