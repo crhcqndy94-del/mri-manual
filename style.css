@@ -102,12 +102,6 @@ a:hover { text-decoration: underline; }
   white-space: nowrap;
 }
 
-.search-toggle {
-  background: none; border: none; cursor: pointer;
-  color: var(--white); padding: 6px; border-radius: var(--radius);
-  display: flex; align-items: center;
-}
-
 /* 検索バー */
 .search-bar {
   background: #0f2d44;
