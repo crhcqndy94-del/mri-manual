@@ -228,7 +228,7 @@ function preprocessMarkdown(md) {
     `<div class="notice-box notice-success"><div class="notice-title">✅ ${title}</div>${body.trim()}</div>\n`
   );
   // 動画ブロック [VIDEO:url:タイトル] または [VIDEO:タイトル]（プレースホルダ）
-  md = md.replace(/\[VIDEO:(.+?):([^\]:]+)\]/g, (_, url, title) =>
+  md = md.replace(/\[VIDEO:(.+):([^\]:]+)\]/g, (_, url, title) =>
     `<div class="video-block">` +
     `<video controls playsinline preload="metadata">` +
     `<source src="${url}" type="video/mp4">` +
