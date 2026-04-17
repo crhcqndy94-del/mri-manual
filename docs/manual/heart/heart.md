@@ -49,16 +49,6 @@ LookLocker撮像後、速やかに正常心筋にROIを設定しTICよりNull po
 
 ---
 
-## ■ 冠動脈 — Coronary
-
-| # | シーケンス | FOV | スライス厚 | 枚数 | 備考 |
-|---|-----------|-----|-----------|------|------|
-| ① | Coronary BH | 300 | 3mm | 80枚 | |
-| ② | CINE 100Phase | 350 | 7mm | 1枚 | |
-| ③ | Coronary | 300 | 1.6mm | 150枚 | |
-
----
-
 ![](assets/images/heart/imaging/p01.jpg)
 
 ---
@@ -120,3 +110,13 @@ LookLocker撮像後、速やかに正常心筋にROIを設定しTICよりNull po
 ---
 
 ![](assets/images/heart/imaging/p16.jpg)
+
+---
+
+## ■ 冠動脈 — Coronary
+
+| # | シーケンス | FOV | スライス厚 | 枚数 | 備考 |
+|---|-----------|-----|-----------|------|------|
+| ① | Coronary BH | 300 | 3mm | 80枚 | |
+| ② | CINE 100Phase | 350 | 7mm | 1枚 | |
+| ③ | Coronary | 300 | 1.6mm | 150枚 | |
