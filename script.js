@@ -174,7 +174,7 @@ async function loadMarkdownPage(mdPath) {
   content.innerHTML = '<div class="loading">読み込み中...</div>';
 
   try {
-    const res = await fetch(mdPath);
+    const res = await fetch(mdPath + '?v=' + Date.now(), { cache: 'no-store' });
     if (!res.ok) throw new Error('not found');
     const rawMd = await res.text();
 
