@@ -227,9 +227,19 @@ function preprocessMarkdown(md) {
   md = md.replace(/:::success\s*(.*?)\n([\s\S]*?):::/gm, (_, title, body) =>
     `<div class="notice-box notice-success"><div class="notice-title">✅ ${title}</div>${body.trim()}</div>\n`
   );
-  // 動画プレースホルダ [VIDEO:タイトル]
-  md = md.replace(/\[VIDEO:(.*?)\]/g, (_, title) =>
-    `<div class="placeholder-box"><span class="placeholder-icon">🎬</span><strong>${title}</strong><br>動画ファイルをここに追加してください<br><small>assets/videos/ フォルダに MP4 を置いてリンクを設定</small></div>`
+  // 動画ブロック [VIDEO:url:タイトル] または [VIDEO:タイトル]（プレースホルダ）
+  md = md.replace(/\[VIDEO:([^:\]]+):([^\]]+)\]/g, (_, url, title) =>
+    `<div class="video-block">` +
+    `<video controls playsinline preload="metadata">` +
+    `<source src="${url}" type="video/mp4">` +
+    `お使いのブラウザは動画再生に対応していません。</video>` +
+    `<div class="video-footer">` +
+    `<span class="video-title">🎬 ${title}</span>` +
+    `<a class="video-download" href="${url}" download>⬇ ダウンロード</a>` +
+    `</div></div>`
+  );
+  md = md.replace(/\[VIDEO:([^\]]+)\]/g, (_, title) =>
+    `<div class="placeholder-box"><span class="placeholder-icon">🎬</span><strong>${title}</strong><br>動画ファイルをここに追加してください</div>`
   );
   // 画像プレースホルダ [IMG:説明]
   md = md.replace(/\[IMG:(.*?)\]/g, (_, desc) =>

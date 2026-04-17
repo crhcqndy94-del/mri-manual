@@ -1,5 +1,9 @@
 # 心臓MRI 撮像マニュアル
 
+[VIDEO:https://github.com/crhcqndy94-del/mri-manual/releases/download/media/cardiac.mp4:心臓MRI 撮像手順]
+
+---
+
 ![](assets/images/heart/imaging/p01.jpg)
 
 
