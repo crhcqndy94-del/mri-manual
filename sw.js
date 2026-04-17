@@ -1,6 +1,6 @@
 /* Service Worker - MRI業務マニュアル PWA */
 // バージョンを変える = 古いキャッシュ全削除 + 強制更新
-const CACHE_NAME = 'mri-manual-v5';
+const CACHE_NAME = 'mri-manual-v6';
 
 // キャッシュするのは外部CDNのみ（ローカルファイルは常にネットワークから取得）
 const CDN_CACHE = [
