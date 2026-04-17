@@ -393,6 +393,9 @@ a:hover { text-decoration: underline; }
 .cat-pelvis  { background: linear-gradient(135deg, #0d1b2a 0%, #112840 100%); }
 .cat-spine   { background: linear-gradient(135deg, #0d1b2a 0%, #1a1e2a 100%); }
 .cat-ops     { background: linear-gradient(135deg, #0d1b2a 0%, #1a2030 100%); }
+.cat-upper   { background: linear-gradient(135deg, #0d1b2a 0%, #1a2535 100%); }
+.cat-hip     { background: linear-gradient(135deg, #0d1b2a 0%, #1e2535 100%); }
+.cat-soft    { background: linear-gradient(135deg, #0d1b2a 0%, #1a2d2d 100%); }
 
 .category-card ul { list-style: none; padding: 8px 0; }
 .category-card ul li a {

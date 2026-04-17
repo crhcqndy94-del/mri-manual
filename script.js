@@ -56,6 +56,16 @@ const PAGE_MAP = {
   'heart/strain':         'docs/manual/heart/strain.md',
   'special/mrs':          'docs/manual/special/mrs.md',
   'special/lower_limb':   'docs/manual/special/lower_limb.md',
+  'jaw/jaw':              'docs/manual/jaw/jaw.md',
+  'upper/shoulder':       'docs/manual/upper/shoulder.md',
+  'upper/elbow':          'docs/manual/upper/elbow.md',
+  'upper/hand':           'docs/manual/upper/hand.md',
+  'upper/tfcc':           'docs/manual/upper/tfcc.md',
+  'hip/hip':              'docs/manual/hip/hip.md',
+  'lower/knee':           'docs/manual/lower/knee.md',
+  'lower/ankle':          'docs/manual/lower/ankle.md',
+  'lower/achilles':       'docs/manual/lower/achilles.md',
+  'soft/soft_tissue':     'docs/manual/soft/soft_tissue.md',
   'updates/index':        'docs/updates/index.md',
 };
 
