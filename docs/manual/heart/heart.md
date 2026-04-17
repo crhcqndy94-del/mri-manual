@@ -37,7 +37,15 @@ Survey / CINE TRA / CINE SAG / CINE LAx / CINE SAx / CINE 4ch / T2W_STIR_BB / LG
 LookLocker撮像後、速やかに正常心筋にROIを設定しTICよりNull pointを決定すること（造影後1分以内に完了）
 :::
 
-[VIDEO:心臓MRI 撮像手順（iPad内動画参照）]
+<div class="video-block">
+<video controls playsinline preload="metadata" style="width:100%;display:block;background:#000;">
+<source src="https://github.com/crhcqndy94-del/mri-manual/releases/download/media/cardiac_720p.mp4" type="video/mp4">
+</video>
+<div class="video-footer">
+<span class="video-title">🎬 心臓MRI 撮像手順</span>
+<a class="video-download" href="https://github.com/crhcqndy94-del/mri-manual/releases/download/media/cardiac_720p.mp4" download="cardiac.mp4">⬇ ダウンロード</a>
+</div>
+</div>
 
 ---
 
