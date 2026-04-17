@@ -333,7 +333,21 @@ a:hover { text-decoration: underline; }
 }
 .quick-card.emergency { background: #fdecea; border-color: #fadbd8; }
 .quick-card.emergency:hover { background: #fadbd8; border-color: var(--accent); }
-.quick-icon { font-size: 1.6rem; margin-bottom: 4px; }
+.quick-icon {
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quick-icon img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(0,180,216,0.4);
+  box-shadow: 0 0 12px rgba(0,180,216,0.2);
+}
 .quick-label { font-size: 0.8rem; font-weight: 600; color: var(--text); line-height: 1.4; }
 .quick-label small { font-weight: 400; color: var(--text-light); font-size: 0.72rem; }
 
@@ -356,15 +370,29 @@ a:hover { text-decoration: underline; }
   color: var(--white);
 }
 .category-header h3 { font-size: 0.95rem; font-weight: 700; }
-.cat-icon { font-size: 1.2rem; }
-.cat-head { background: linear-gradient(135deg, #0d1b2a, #0f2d44); }
-.cat-ear { background: #6c3483; }
-.cat-neck { background: #1e8449; }
-.cat-chest { background: #c0392b; }
-.cat-abdomen { background: #d35400; }
-.cat-pelvis { background: linear-gradient(135deg, #0d1b2a, #0f2d44); }
-.cat-spine { background: #5d6d7e; }
-.cat-ops { background: #2e4057; }
+.cat-icon {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.cat-icon img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(0,180,216,0.45);
+  box-shadow: 0 0 14px rgba(0,180,216,0.25);
+}
+.cat-head    { background: linear-gradient(135deg, #0d1b2a 0%, #112840 100%); }
+.cat-ear     { background: linear-gradient(135deg, #0d1b2a 0%, #1a0f35 100%); }
+.cat-neck    { background: linear-gradient(135deg, #0d1b2a 0%, #0d2b20 100%); }
+.cat-chest   { background: linear-gradient(135deg, #0d1b2a 0%, #2a0d0d 100%); }
+.cat-abdomen { background: linear-gradient(135deg, #0d1b2a 0%, #2a1a0d 100%); }
+.cat-pelvis  { background: linear-gradient(135deg, #0d1b2a 0%, #112840 100%); }
+.cat-spine   { background: linear-gradient(135deg, #0d1b2a 0%, #1a1e2a 100%); }
+.cat-ops     { background: linear-gradient(135deg, #0d1b2a 0%, #1a2030 100%); }
 
 .category-card ul { list-style: none; padding: 8px 0; }
 .category-card ul li a {
