@@ -371,7 +371,7 @@ a:hover { text-decoration: underline; }
 .category-header {
   display: flex; align-items: center; gap: 10px;
   padding: 12px 16px;
-  color: var(--white);
+  color: #e0f8fd;
 }
 .category-header h3 { font-size: 0.95rem; font-weight: 700; }
 .cat-icon {
