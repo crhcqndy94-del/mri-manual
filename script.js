@@ -76,8 +76,18 @@ document.addEventListener('DOMContentLoaded', () => {
   // URL ハッシュからページ復元
   const hash = location.hash.replace('#', '');
   if (hash && PAGE_MAP[hash]) {
-    navigateTo(hash);
+    navigateTo(hash, true);
   }
+
+  // ブラウザの戻る／進むボタン対応
+  window.addEventListener('hashchange', () => {
+    const h = location.hash.replace('#', '');
+    if (h && PAGE_MAP[h]) {
+      navigateTo(h, true);
+    } else {
+      navigateTo('home', true);
+    }
+  });
 });
 
 // ===== ハンバーガーメニュー =====
@@ -118,9 +128,9 @@ function initNavLinks() {
 }
 
 // ===== ページ遷移 =====
-function navigateTo(page) {
+function navigateTo(page, skipHistory) {
   currentPage = page;
-  location.hash = page;
+  if (!skipHistory) location.hash = page;
 
   const homePage = document.getElementById('homePage');
   const manualPage = document.getElementById('manualPage');

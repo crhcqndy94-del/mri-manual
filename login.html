@@ -107,7 +107,7 @@
 <body>
   <div class="login-card">
     <div class="logo">
-      <div class="logo-icon">🔬</div>
+      <div class="logo-icon">🏥</div>
       <h1>MRI業務マニュアル</h1>
       <p>個人まとめサイト</p>
     </div>
@@ -149,7 +149,7 @@
       try {
         const s = JSON.parse(session);
         if (s.expires > Date.now()) {
-          window.location.href = 'index.html';
+          window.location.replace('index.html');
         } else {
           sessionStorage.removeItem('mri_session');
         }
@@ -183,7 +183,7 @@
           user: username,
           expires: Date.now() + SESSION_HOURS * 60 * 60 * 1000
         }));
-        window.location.href = 'index.html';
+        window.location.replace('index.html');
       } else {
         errMsg.style.display = 'block';
         btn.disabled = false;
