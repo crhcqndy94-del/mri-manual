@@ -51,10 +51,38 @@
         <a href="#" class="nav-home" data-page="home">🏠 ホーム</a>
       </li>
 
+      <!-- 解析・外回り・参考資料 -->
       <li class="nav-section">
-        <span class="nav-category">⭐ 特殊検査</span>
+        <span class="nav-category">🔬 解析</span>
         <ul>
-          <li><a href="#" data-page="heart/heart">心臓（Cardiac MRI）</a></li>
+          <li><a href="#" data-page="heart/index">心臓MRI トップ</a></li>
+          <li><a href="#" data-page="heart/isp_cardiac">EF解析（心機能）</a></li>
+          <li><a href="#" data-page="heart/t1_mapping">T1マッピング / ECV</a></li>
+          <li><a href="#" data-page="heart/t2_mapping">T2マッピング</a></li>
+          <li><a href="#" data-page="heart/t2star_mapping">T2*マッピング</a></li>
+          <li><a href="#" data-page="heart/strain">ストレイン解析</a></li>
+        </ul>
+      </li>
+      <li class="nav-section">
+        <span class="nav-category">👔 外回り</span>
+        <ul>
+          <li><a href="#" data-page="checkin">着替え・問診・入室手順</a></li>
+        </ul>
+      </li>
+      <li class="nav-section">
+        <span class="nav-category">📚 参考資料</span>
+        <ul>
+          <li><a href="#" data-page="contrast">造影剤換算表</a></li>
+          <li><a href="#" data-page="updates/index">変更履歴</a></li>
+        </ul>
+      </li>
+
+      <!-- 撮像マニュアル -->
+      <li class="nav-section">
+        <span class="nav-category">⭐ 特殊撮像</span>
+        <ul>
+          <li><a href="#" data-page="heart/imaging">心臓MRI 撮像マニュアル</a></li>
+          <li><a href="#" data-page="heart/heart">心臓・冠動脈 シーケンス一覧</a></li>
           <li><a href="#" data-page="special/mrs">MRスペクトロスコピー</a></li>
           <li><a href="#" data-page="special/lower_limb">下肢血管MRA</a></li>
         </ul>
@@ -100,29 +128,9 @@
         </ul>
       </li>
       <li class="nav-section">
-        <span class="nav-category">胸部・心臓</span>
+        <span class="nav-category">胸部・乳房</span>
         <ul>
           <li><a href="#" data-page="chest/chest">縦隔（単純・造影）</a></li>
-        </ul>
-      </li>
-      <li class="nav-section">
-        <span class="nav-category">心臓MRI</span>
-        <ul>
-          <li><a href="#" data-page="heart/index">心臓MRI トップ</a></li>
-          <li class="nav-sub-header">— 撮像 —</li>
-          <li><a href="#" data-page="heart/imaging">撮像マニュアル</a></li>
-          <li><a href="#" data-page="heart/heart">撮像シーケンス一覧</a></li>
-          <li class="nav-sub-header">— 解析（ISP） —</li>
-          <li><a href="#" data-page="heart/isp_cardiac">EF解析（心機能）</a></li>
-          <li><a href="#" data-page="heart/t1_mapping">T1マッピング / ECV</a></li>
-          <li><a href="#" data-page="heart/t2_mapping">T2マッピング</a></li>
-          <li><a href="#" data-page="heart/t2star_mapping">T2*マッピング</a></li>
-          <li><a href="#" data-page="heart/strain">ストレイン解析</a></li>
-        </ul>
-      </li>
-      <li class="nav-section">
-        <span class="nav-category">乳房</span>
-        <ul>
           <li><a href="#" data-page="breast/breast">乳房（腹臥位・仰臥位・インプラント）</a></li>
         </ul>
       </li>
@@ -180,14 +188,6 @@
           <li><a href="#" data-page="soft/soft_tissue">皮下・軟部腫瘍</a></li>
         </ul>
       </li>
-      <li class="nav-section">
-        <span class="nav-category">業務・管理</span>
-        <ul>
-          <li><a href="#" data-page="checkin">着替え・問診・入室手順</a></li>
-          <li><a href="#" data-page="contrast">造影剤換算表</a></li>
-          <li><a href="#" data-page="updates/index">変更履歴</a></li>
-        </ul>
-      </li>
     </ul>
   </div>
 </nav>
@@ -203,22 +203,47 @@
       ⚠️ このサイトは個人が作成したまとめサイトです。いかなる組織・施設とも一切関係ありません。
     </div>
 
-    <!-- 特殊検査 -->
-    <section class="quick-access">
-      <h2 class="section-title">⭐ 特殊検査</h2>
-      <div class="quick-grid">
-        <a href="#" data-page="heart/index" class="quick-card">
-          <span class="quick-icon">❤️</span>
-          <span class="quick-label">心臓<br><small>Cardiac MRI</small></span>
-        </a>
-        <a href="#" data-page="special/mrs" class="quick-card">
-          <span class="quick-icon">📊</span>
-          <span class="quick-label">MRS<br><small>スペクトロスコピー</small></span>
-        </a>
-        <a href="#" data-page="special/lower_limb" class="quick-card">
-          <span class="quick-icon"><img src="assets/images/icons/lower-limb.png" alt="下肢血管"></span>
-          <span class="quick-label">下肢血管<br><small>Lower Limb MRA</small></span>
-        </a>
+    <!-- 解析・外回り・参考資料 -->
+    <section class="category-section">
+      <h2 class="section-title">🔬 解析・外回り・参考資料</h2>
+      <div class="category-grid">
+
+        <div class="category-card">
+          <div class="category-header cat-analysis">
+            <span class="cat-icon">🔬</span>
+            <h3>解析（心臓MRI）</h3>
+          </div>
+          <ul>
+            <li><a href="#" data-page="heart/index">心臓MRI トップ</a></li>
+            <li><a href="#" data-page="heart/isp_cardiac">EF解析（心機能）</a></li>
+            <li><a href="#" data-page="heart/t1_mapping">T1マッピング / ECV</a></li>
+            <li><a href="#" data-page="heart/t2_mapping">T2マッピング</a></li>
+            <li><a href="#" data-page="heart/t2star_mapping">T2*マッピング</a></li>
+            <li><a href="#" data-page="heart/strain">ストレイン解析</a></li>
+          </ul>
+        </div>
+
+        <div class="category-card">
+          <div class="category-header cat-outside">
+            <span class="cat-icon">👔</span>
+            <h3>外回り</h3>
+          </div>
+          <ul>
+            <li><a href="#" data-page="checkin">着替え・問診・入室手順</a></li>
+          </ul>
+        </div>
+
+        <div class="category-card">
+          <div class="category-header cat-reference">
+            <span class="cat-icon">📚</span>
+            <h3>参考資料</h3>
+          </div>
+          <ul>
+            <li><a href="#" data-page="contrast">造影剤換算表（ガドビスト）</a></li>
+            <li><a href="#" data-page="updates/index">変更履歴</a></li>
+          </ul>
+        </div>
+
       </div>
     </section>
 
@@ -235,10 +260,23 @@
       <a href="#" data-page="updates/index" class="btn-more">変更履歴をすべて見る →</a>
     </section>
 
-    <!-- 部位別カテゴリ -->
+    <!-- 撮像マニュアル -->
     <section class="category-section">
-      <h2 class="section-title">📂 部位別マニュアル</h2>
+      <h2 class="section-title">📂 撮像マニュアル</h2>
       <div class="category-grid">
+
+        <div class="category-card">
+          <div class="category-header cat-special">
+            <span class="cat-icon">⭐</span>
+            <h3>特殊撮像</h3>
+          </div>
+          <ul>
+            <li><a href="#" data-page="heart/imaging">心臓MRI 撮像マニュアル</a></li>
+            <li><a href="#" data-page="heart/heart">心臓・冠動脈 シーケンス一覧</a></li>
+            <li><a href="#" data-page="special/mrs">MRスペクトロスコピー</a></li>
+            <li><a href="#" data-page="special/lower_limb">下肢血管MRA</a></li>
+          </ul>
+        </div>
 
         <div class="category-card">
           <div class="category-header cat-head">
@@ -262,6 +300,7 @@
           </div>
           <ul>
             <li><a href="#" data-page="inner_ear/iac">内耳・IAC（難聴・聴神経腫瘍）</a></li>
+            <li><a href="#" data-page="jaw/jaw">顎関節（TMJ・3.0T）</a></li>
             <li><a href="#" data-page="sinus/sinus">副鼻腔（単純・造影）</a></li>
             <li><a href="#" data-page="pituitary/pituitary">下垂体（単純・造影）</a></li>
             <li><a href="#" data-page="orbit/orbit">眼窩（単純・造影）</a></li>
@@ -282,11 +321,10 @@
         <div class="category-card">
           <div class="category-header cat-chest">
             <span class="cat-icon"><img src="assets/images/icons/chest.png" alt="胸部"></span>
-            <h3>胸部・心臓・乳房</h3>
+            <h3>胸部・乳房</h3>
           </div>
           <ul>
             <li><a href="#" data-page="chest/chest">縦隔（単純・造影）</a></li>
-            <li><a href="#" data-page="heart/heart">心臓・冠動脈</a></li>
             <li><a href="#" data-page="breast/breast">乳房（腹臥位・仰臥位）</a></li>
           </ul>
         </div>
@@ -361,19 +399,6 @@
           </div>
           <ul>
             <li><a href="#" data-page="soft/soft_tissue">皮下・軟部腫瘍</a></li>
-            <li><a href="#" data-page="jaw/jaw">顎関節（TMJ・3.0T）</a></li>
-          </ul>
-        </div>
-
-        <div class="category-card">
-          <div class="category-header cat-ops">
-            <span class="cat-icon">📋</span>
-            <h3>業務・管理</h3>
-          </div>
-          <ul>
-            <li><a href="#" data-page="checkin">着替え・問診・入室手順</a></li>
-            <li><a href="#" data-page="contrast">造影剤換算表（ガドビスト）</a></li>
-            <li><a href="#" data-page="updates/index">変更履歴</a></li>
           </ul>
         </div>
 

@@ -389,6 +389,10 @@ a:hover { text-decoration: underline; }
   border: 2px solid rgba(0,180,216,0.45);
   box-shadow: 0 0 14px rgba(0,180,216,0.25);
 }
+.cat-analysis  { background: linear-gradient(135deg, #0d1b2a 0%, #1a2d10 100%); }
+.cat-outside   { background: linear-gradient(135deg, #0d1b2a 0%, #2d2010 100%); }
+.cat-reference { background: linear-gradient(135deg, #0d1b2a 0%, #10202d 100%); }
+.cat-special   { background: linear-gradient(135deg, #0d1b2a 0%, #2a1a08 100%); }
 .cat-head    { background: linear-gradient(135deg, #0d1b2a 0%, #112840 100%); }
 .cat-ear     { background: linear-gradient(135deg, #0d1b2a 0%, #1a0f35 100%); }
 .cat-neck    { background: linear-gradient(135deg, #0d1b2a 0%, #0d2b20 100%); }
