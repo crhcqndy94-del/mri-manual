@@ -3,93 +3,154 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#1a5276">
+  <meta name="theme-color" content="#0d1b2a">
   <title>ログイン | MRI業務マニュアル</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Hiragino Sans', 'Yu Gothic', sans-serif;
-      background: linear-gradient(135deg, #1a5276 0%, #154360 100%);
+      background: linear-gradient(135deg, #0d1b2a 0%, #0f2d44 60%, #1a0a2e 100%);
       min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    /* 背景の星のような光点 */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 30%, rgba(0,180,216,0.06) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 70%, rgba(109,40,217,0.08) 0%, transparent 50%);
+      pointer-events: none;
     }
     .login-card {
-      background: #fff;
-      border-radius: 16px;
+      background: rgba(13, 30, 48, 0.92);
+      border: 1px solid rgba(0, 180, 216, 0.25);
+      border-radius: 20px;
       padding: 48px 40px 40px;
       width: 100%;
       max-width: 400px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      box-shadow:
+        0 20px 60px rgba(0,0,0,0.5),
+        0 0 40px rgba(0,180,216,0.08),
+        inset 0 1px 0 rgba(255,255,255,0.05);
+      position: relative;
+      z-index: 1;
+      backdrop-filter: blur(12px);
     }
     .logo {
       text-align: center;
-      margin-bottom: 32px;
+      margin-bottom: 36px;
     }
     .logo-icon {
-      width: 64px; height: 64px;
-      background: #1a5276;
-      border-radius: 16px;
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      font-size: 32px;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
+      position: relative;
+      overflow: hidden;
+      border: 2px solid rgba(0,180,216,0.4);
+      box-shadow: 0 0 24px rgba(0,180,216,0.25);
+    }
+    .logo-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .logo-icon-fallback {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #0d1b2a, #0f2d44);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      border-radius: 50%;
     }
     .logo h1 {
       font-size: 18px;
-      color: #1a5276;
+      color: #e0f8fd;
       font-weight: 700;
       line-height: 1.4;
+      letter-spacing: 0.02em;
     }
     .logo p {
       font-size: 13px;
-      color: #7f8c8d;
-      margin-top: 4px;
+      color: rgba(0,180,216,0.7);
+      margin-top: 5px;
+      letter-spacing: 0.04em;
     }
     .form-group {
       margin-bottom: 20px;
     }
     label {
       display: block;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 600;
-      color: #2c3e50;
-      margin-bottom: 6px;
+      color: rgba(0,180,216,0.9);
+      margin-bottom: 7px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
     }
     input[type="text"], input[type="password"] {
       width: 100%;
       padding: 12px 16px;
-      border: 2px solid #e0e0e0;
+      border: 1px solid rgba(0,180,216,0.2);
       border-radius: 8px;
       font-size: 15px;
-      transition: border-color 0.2s;
+      transition: border-color 0.2s, box-shadow 0.2s;
       outline: none;
+      background: rgba(255,255,255,0.06);
+      color: #e0f8fd;
+    }
+    input[type="text"]::placeholder, input[type="password"]::placeholder {
+      color: rgba(255,255,255,0.25);
     }
     input[type="text"]:focus, input[type="password"]:focus {
-      border-color: #1a5276;
+      border-color: rgba(0,180,216,0.6);
+      box-shadow: 0 0 0 3px rgba(0,180,216,0.12);
     }
     .btn-login {
       width: 100%;
       padding: 14px;
-      background: #1a5276;
+      background: linear-gradient(135deg, #0099b8 0%, #00b4d8 100%);
       color: #fff;
       border: none;
       border-radius: 8px;
       font-size: 16px;
       font-weight: 700;
       cursor: pointer;
-      transition: background 0.2s;
+      transition: all 0.2s;
       margin-top: 8px;
+      letter-spacing: 0.04em;
+      box-shadow: 0 4px 16px rgba(0,180,216,0.3);
     }
-    .btn-login:hover { background: #154360; }
-    .btn-login:disabled { background: #bdc3c7; cursor: not-allowed; }
+    .btn-login:hover {
+      background: linear-gradient(135deg, #00b4d8 0%, #22d3ee 100%);
+      box-shadow: 0 6px 20px rgba(0,180,216,0.45);
+      transform: translateY(-1px);
+    }
+    .btn-login:active { transform: translateY(0); }
+    .btn-login:disabled {
+      background: rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.4);
+      cursor: not-allowed;
+      box-shadow: none;
+      transform: none;
+    }
     .error-msg {
-      background: #fdecea;
-      border: 1px solid #e74c3c;
-      color: #c0392b;
+      background: rgba(231,76,60,0.12);
+      border: 1px solid rgba(231,76,60,0.4);
+      color: #ff8a80;
       padding: 10px 14px;
       border-radius: 8px;
       font-size: 13px;
@@ -98,16 +159,19 @@
     }
     .footer-note {
       text-align: center;
-      margin-top: 24px;
-      font-size: 12px;
-      color: #aaa;
+      margin-top: 28px;
+      font-size: 11px;
+      color: rgba(255,255,255,0.25);
+      line-height: 1.7;
     }
   </style>
 </head>
 <body>
   <div class="login-card">
     <div class="logo">
-      <div class="logo-icon">🏥</div>
+      <div class="logo-icon">
+        <img src="assets/images/login-icon.png" alt="MRI" onerror="this.parentElement.innerHTML='<div class=\'logo-icon-fallback\'>🏥</div>'">
+      </div>
       <h1>MRI業務マニュアル</h1>
       <p>個人まとめサイト</p>
     </div>
