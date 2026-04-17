@@ -421,6 +421,36 @@ a:hover { text-decoration: underline; }
   text-decoration: none;
 }
 
+/* 解析サブセクション（アコーディオン） */
+.analysis-sub {
+  border-top: 1px solid rgba(0,180,216,0.1);
+}
+.analysis-sub summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  color: #a0d4e8;
+  font-size: 0.9rem;
+  font-weight: 600;
+  list-style: none;
+  user-select: none;
+  transition: background .12s;
+}
+.analysis-sub summary::-webkit-details-marker { display: none; }
+.analysis-sub summary::after {
+  content: '▶';
+  font-size: 0.6rem;
+  margin-left: auto;
+  transition: transform .2s;
+  color: var(--text-light);
+}
+.analysis-sub[open] summary::after { transform: rotate(90deg); }
+.analysis-sub summary:hover { background: rgba(0,180,216,0.05); }
+.analysis-sub ul { padding: 4px 0 8px; }
+.analysis-sub ul li a { padding-left: 28px; }
+
 /* フッター */
 .site-footer {
   margin-top: 32px;

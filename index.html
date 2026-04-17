@@ -54,12 +54,14 @@
       <li class="nav-section">
         <span class="nav-category">🔬 解析</span>
         <ul>
-          <li><a href="#" data-page="heart/index">心臓MRI トップ</a></li>
+          <li class="nav-sub-header">— 心臓 —</li>
           <li><a href="#" data-page="heart/isp_cardiac">EF解析（心機能）</a></li>
           <li><a href="#" data-page="heart/t1_mapping">T1マッピング / ECV</a></li>
           <li><a href="#" data-page="heart/t2_mapping">T2マッピング</a></li>
           <li><a href="#" data-page="heart/t2star_mapping">T2*マッピング</a></li>
           <li><a href="#" data-page="heart/strain">ストレイン解析</a></li>
+          <li class="nav-sub-header">— 乳房 —</li>
+          <li><a href="#" data-page="breast/breast">乳房（腹臥位・仰臥位）</a></li>
         </ul>
       </li>
       <li class="nav-section">
@@ -80,8 +82,7 @@
       <li class="nav-section">
         <span class="nav-category">⭐ 特殊撮像</span>
         <ul>
-          <li><a href="#" data-page="heart/imaging">心臓MRI 撮像マニュアル</a></li>
-          <li><a href="#" data-page="heart/heart">心臓・冠動脈 シーケンス一覧</a></li>
+          <li><a href="#" data-page="heart/heart">心臓</a></li>
           <li><a href="#" data-page="special/mrs">MRスペクトロスコピー</a></li>
           <li><a href="#" data-page="special/lower_limb">下肢血管MRA</a></li>
         </ul>
@@ -127,9 +128,10 @@
         </ul>
       </li>
       <li class="nav-section">
-        <span class="nav-category">胸部・乳房</span>
+        <span class="nav-category">胸部・心臓・乳房</span>
         <ul>
           <li><a href="#" data-page="chest/chest">縦隔（単純・造影）</a></li>
+          <li><a href="#" data-page="heart/heart">心臓</a></li>
           <li><a href="#" data-page="breast/breast">乳房（腹臥位・仰臥位・インプラント）</a></li>
         </ul>
       </li>
@@ -210,16 +212,24 @@
         <div class="category-card">
           <div class="category-header cat-analysis">
             <span class="cat-icon">🔬</span>
-            <h3>解析（心臓MRI）</h3>
+            <h3>解析</h3>
           </div>
-          <ul>
-            <li><a href="#" data-page="heart/index">心臓MRI トップ</a></li>
-            <li><a href="#" data-page="heart/isp_cardiac">EF解析（心機能）</a></li>
-            <li><a href="#" data-page="heart/t1_mapping">T1マッピング / ECV</a></li>
-            <li><a href="#" data-page="heart/t2_mapping">T2マッピング</a></li>
-            <li><a href="#" data-page="heart/t2star_mapping">T2*マッピング</a></li>
-            <li><a href="#" data-page="heart/strain">ストレイン解析</a></li>
-          </ul>
+          <details class="analysis-sub">
+            <summary>❤️ 心臓</summary>
+            <ul>
+              <li><a href="#" data-page="heart/isp_cardiac">EF解析（心機能）</a></li>
+              <li><a href="#" data-page="heart/t1_mapping">T1マッピング / ECV</a></li>
+              <li><a href="#" data-page="heart/t2_mapping">T2マッピング</a></li>
+              <li><a href="#" data-page="heart/t2star_mapping">T2*マッピング</a></li>
+              <li><a href="#" data-page="heart/strain">ストレイン解析</a></li>
+            </ul>
+          </details>
+          <details class="analysis-sub">
+            <summary>🎀 乳房</summary>
+            <ul>
+              <li><a href="#" data-page="breast/breast">乳房（腹臥位・仰臥位）</a></li>
+            </ul>
+          </details>
         </div>
 
         <div class="category-card">
@@ -270,8 +280,7 @@
             <h3>特殊撮像</h3>
           </div>
           <ul>
-            <li><a href="#" data-page="heart/imaging">心臓MRI 撮像マニュアル</a></li>
-            <li><a href="#" data-page="heart/heart">心臓・冠動脈 シーケンス一覧</a></li>
+            <li><a href="#" data-page="heart/heart">心臓</a></li>
             <li><a href="#" data-page="special/mrs">MRスペクトロスコピー</a></li>
             <li><a href="#" data-page="special/lower_limb">下肢血管MRA</a></li>
           </ul>
@@ -320,10 +329,11 @@
         <div class="category-card">
           <div class="category-header cat-chest">
             <span class="cat-icon"><img src="assets/images/icons/chest.png" alt="胸部"></span>
-            <h3>胸部・乳房</h3>
+            <h3>胸部・心臓・乳房</h3>
           </div>
           <ul>
             <li><a href="#" data-page="chest/chest">縦隔（単純・造影）</a></li>
+            <li><a href="#" data-page="heart/heart">心臓</a></li>
             <li><a href="#" data-page="breast/breast">乳房（腹臥位・仰臥位）</a></li>
           </ul>
         </div>
