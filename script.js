@@ -176,8 +176,24 @@ async function loadMarkdownPage(mdPath) {
   try {
     const res = await fetch(mdPath);
     if (!res.ok) throw new Error('not found');
-    const md = await res.text();
+    const rawMd = await res.text();
+
+    // 動画ブロック（<div class="video-block">...）をmarked.jsに通さず直接注入するため退避
+    const videoBlocks = [];
+    const md = rawMd.replace(/<div class="video-block">[\s\S]*?<\/div>\s*\n?<\/div>/g, (match) => {
+      const idx = videoBlocks.length;
+      videoBlocks.push(match);
+      return `<div class="video-inject-placeholder" data-idx="${idx}"></div>`;
+    });
+
     renderMarkdown(md);
+
+    // プレースホルダをDOMに直接置換（marked.jsをバイパス）
+    content.querySelectorAll('.video-inject-placeholder').forEach(el => {
+      const html = videoBlocks[parseInt(el.dataset.idx)];
+      if (html) el.outerHTML = html;
+    });
+
   } catch (err) {
     content.innerHTML = `
       <div class="notice-box notice-warning">
