@@ -24,7 +24,7 @@
     <button class="search-toggle" id="searchToggleBtn" aria-label="検索">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
     </button>
-    <button class="logout-btn" id="logoutBtn" aria-label="ログアウト" title="ログアウト" onclick="sessionStorage.removeItem('mri_session');window.location.replace('login.html');" style="background:none;border:none;color:#fff;cursor:pointer;padding:8px;opacity:0.8;font-size:13px;">⏻</button>
+    <button class="logout-btn" id="logoutBtn" aria-label="ログアウト" title="ログアウト" onclick="sessionStorage.removeItem('mri_session');window.location.replace('login.html');">ログアウト</button>
   </div>
   <!-- 検索バー -->
   <div class="search-bar" id="searchBar">
@@ -74,7 +74,6 @@
         <span class="nav-category">📚 参考資料</span>
         <ul>
           <li><a href="#" data-page="contrast">造影剤換算表</a></li>
-          <li><a href="#" data-page="updates/index">変更履歴</a></li>
         </ul>
       </li>
 
@@ -204,6 +203,19 @@
       ⚠️ 個人が作成したまとめサイトです。当サイトに個人情報は一切含まれておらず、いかなる組織・施設とも一切関係ありません。
     </div>
 
+    <!-- 最新情報バナー -->
+    <section class="updates-banner">
+      <h2 class="section-title">📢 最新の更新</h2>
+      <div id="recentUpdates" class="updates-list">
+        <div class="update-item">
+          <span class="update-date">2025-11-13</span>
+          <span class="update-tag tag-update">改訂</span>
+          <span class="update-text">MRI業務マニュアル 第5版 公開</span>
+        </div>
+      </div>
+      <a href="#" data-page="updates/index" class="btn-more">変更履歴をすべて見る →</a>
+    </section>
+
     <!-- 解析・外回り・参考資料 -->
     <section class="category-section">
       <h2 class="section-title">🔬 解析・外回り・参考資料</h2>
@@ -214,22 +226,16 @@
             <span class="cat-icon">🔬</span>
             <h3>解析</h3>
           </div>
-          <details class="analysis-sub">
-            <summary>❤️ 心臓</summary>
-            <ul>
-              <li><a href="#" data-page="heart/isp_cardiac">EF解析（心機能）</a></li>
-              <li><a href="#" data-page="heart/t1_mapping">T1マッピング / ECV</a></li>
-              <li><a href="#" data-page="heart/t2_mapping">T2マッピング</a></li>
-              <li><a href="#" data-page="heart/t2star_mapping">T2*マッピング</a></li>
-              <li><a href="#" data-page="heart/strain">ストレイン解析</a></li>
-            </ul>
-          </details>
-          <details class="analysis-sub">
-            <summary>🎀 乳房</summary>
-            <ul>
-              <li><a href="#" data-page="breast/breast">乳房（腹臥位・仰臥位）</a></li>
-            </ul>
-          </details>
+          <ul>
+            <li class="list-subhead">❤️ 心臓</li>
+            <li><a href="#" data-page="heart/isp_cardiac">EF解析（心機能）</a></li>
+            <li><a href="#" data-page="heart/t1_mapping">T1マッピング / ECV</a></li>
+            <li><a href="#" data-page="heart/t2_mapping">T2マッピング</a></li>
+            <li><a href="#" data-page="heart/t2star_mapping">T2*マッピング</a></li>
+            <li><a href="#" data-page="heart/strain">ストレイン解析</a></li>
+            <li class="list-subhead">🎀 乳房</li>
+            <li><a href="#" data-page="breast/breast">乳房（腹臥位・仰臥位）</a></li>
+          </ul>
         </div>
 
         <div class="category-card">
@@ -249,24 +255,10 @@
           </div>
           <ul>
             <li><a href="#" data-page="contrast">造影剤換算表（ガドビスト）</a></li>
-            <li><a href="#" data-page="updates/index">変更履歴</a></li>
           </ul>
         </div>
 
       </div>
-    </section>
-
-    <!-- 最新情報バナー -->
-    <section class="updates-banner">
-      <h2 class="section-title">📢 最新の更新</h2>
-      <div id="recentUpdates" class="updates-list">
-        <div class="update-item">
-          <span class="update-date">2025-11-13</span>
-          <span class="update-tag tag-update">改訂</span>
-          <span class="update-text">MRI業務マニュアル 第5版 公開</span>
-        </div>
-      </div>
-      <a href="#" data-page="updates/index" class="btn-more">変更履歴をすべて見る →</a>
     </section>
 
     <!-- 撮像マニュアル -->

@@ -63,6 +63,19 @@ a:hover { text-decoration: underline; }
   gap: 5px; padding: 6px; border-radius: var(--radius);
   flex-shrink: 0;
 }
+.search-toggle {
+  background: none; border: none; cursor: pointer;
+  color: #e0f8fd; padding: 8px; display: flex; align-items: center;
+  flex-shrink: 0;
+}
+.search-toggle:hover { opacity: 0.8; }
+.logout-btn {
+  background: none !important; border: 1px solid rgba(0,180,216,0.3) !important;
+  color: #e0f8fd !important; cursor: pointer; padding: 5px 10px !important;
+  font-size: 0.75rem !important; border-radius: 4px; flex-shrink: 0;
+  opacity: 0.85; transition: opacity .15s;
+}
+.logout-btn:hover { opacity: 1; }
 .hamburger span {
   display: block; width: 22px; height: 2px;
   background: #e0f8fd; border-radius: 2px;
@@ -407,6 +420,15 @@ a:hover { text-decoration: underline; }
 .cat-soft    { background: linear-gradient(135deg, #0d1b2a 0%, #1a2d2d 100%); }
 
 .category-card ul { list-style: none; padding: 8px 0; }
+.category-card ul li.list-subhead {
+  padding: 8px 16px 4px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-light);
+  background: rgba(0,180,216,0.04);
+  border-bottom: none;
+  pointer-events: none;
+}
 .category-card ul li a {
   display: block;
   padding: 9px 16px;
