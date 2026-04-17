@@ -65,7 +65,7 @@ a:hover { text-decoration: underline; }
 }
 .hamburger span {
   display: block; width: 22px; height: 2px;
-  background: var(--white); border-radius: 2px;
+  background: #e0f8fd; border-radius: 2px;
   transition: .2s;
 }
 
@@ -77,6 +77,7 @@ a:hover { text-decoration: underline; }
   display: block;
   font-size: 1rem;
   font-weight: 700;
+  color: #e8f4fd;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -84,7 +85,7 @@ a:hover { text-decoration: underline; }
 .site-title-sub {
   display: block;
   font-size: 0.68rem;
-  opacity: 0.75;
+  color: #a0c8e0;
   white-space: nowrap;
 }
 
@@ -172,14 +173,14 @@ a:hover { text-decoration: underline; }
   display: flex; align-items: center; justify-content: space-between;
   padding: 16px;
   background: linear-gradient(135deg, #0d1b2a 0%, #0f2d44 100%);
-  color: var(--white);
+  color: #e0f8fd;
   font-weight: 700;
   font-size: 1rem;
   position: sticky; top: 0; z-index: 1;
 }
 .sidebar-close {
   background: none; border: none; cursor: pointer;
-  color: var(--white); font-size: 1.1rem; padding: 4px 8px;
+  color: #e0f8fd; font-size: 1.1rem; padding: 4px 8px;
 }
 
 .nav-list { list-style: none; padding: 8px 0 80px; }
@@ -805,6 +806,19 @@ details > *:not(summary) { padding: 12px 14px; }
   #manualContent h1 { font-size: 1.6rem; }
   #manualContent table { display: table; }
   .category-grid { grid-template-columns: repeat(3, 1fr); }
+
+  /* PC: サイドバー常時表示 */
+  .hamburger { display: none; }
+  .sidebar-overlay { display: none !important; }
+  .sidebar-content {
+    left: 0;
+    top: var(--header-height);
+    height: calc(100vh - var(--header-height));
+    box-shadow: 1px 0 0 rgba(0,180,216,0.12);
+  }
+  .sidebar-close { display: none; }
+  .sidebar-header { display: none; }
+  .main-content { margin-left: var(--sidebar-width); }
 }
 
 /* スクロールバー（PC） */
