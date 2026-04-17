@@ -690,8 +690,31 @@ a:hover { text-decoration: underline; }
 }
 .notice-box .notice-title {
   font-weight: 700;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   font-size: 0.9rem;
+}
+.notice-box p {
+  margin: 4px 0;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+.admonition-list {
+  list-style: none;
+  padding: 0;
+  margin: 4px 0;
+}
+.admonition-list li {
+  position: relative;
+  padding: 3px 0 3px 1.4em;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+.admonition-list li::before {
+  content: "・";
+  position: absolute;
+  left: 0;
+  color: inherit;
+  font-weight: 700;
 }
 
 /* 画像 */

@@ -226,23 +226,49 @@ function renderMarkdown(md) {
   if (fabToc) fabToc.style.display = 'flex';
 }
 
+// ===== admonitionボディのmarkdownリストをHTMLに変換 =====
+function renderAdmonitionBody(body) {
+  const lines = body.trim().split('\n');
+  let html = '';
+  let listItems = [];
+
+  const flushList = () => {
+    if (listItems.length > 0) {
+      html += '<ul class="admonition-list">' + listItems.map(i => `<li>${i}</li>`).join('') + '</ul>';
+      listItems = [];
+    }
+  };
+
+  for (const line of lines) {
+    const m = line.match(/^[-*]\s+(.+)/);
+    if (m) {
+      listItems.push(m[1]);
+    } else {
+      flushList();
+      if (line.trim()) html += `<p>${line.trim()}</p>`;
+    }
+  }
+  flushList();
+  return html;
+}
+
 // ===== Markdown 前処理（独自記法） =====
 function preprocessMarkdown(md) {
   // :::warning ... ::: → 注意ボックス
   md = md.replace(/:::warning\s*(.*?)\n([\s\S]*?):::/gm, (_, title, body) =>
-    `<div class="notice-box notice-warning"><div class="notice-title">⚠️ ${title}</div>${body.trim()}</div>\n`
+    `<div class="notice-box notice-warning"><div class="notice-title">⚠️ ${title}</div>${renderAdmonitionBody(body)}</div>\n`
   );
   // :::danger ... :::
   md = md.replace(/:::danger\s*(.*?)\n([\s\S]*?):::/gm, (_, title, body) =>
-    `<div class="notice-box notice-danger"><div class="notice-title">🚨 ${title}</div>${body.trim()}</div>\n`
+    `<div class="notice-box notice-danger"><div class="notice-title">🚨 ${title}</div>${renderAdmonitionBody(body)}</div>\n`
   );
   // :::info ... :::
   md = md.replace(/:::info\s*(.*?)\n([\s\S]*?):::/gm, (_, title, body) =>
-    `<div class="notice-box notice-info"><div class="notice-title">ℹ️ ${title}</div>${body.trim()}</div>\n`
+    `<div class="notice-box notice-info"><div class="notice-title">ℹ️ ${title}</div>${renderAdmonitionBody(body)}</div>\n`
   );
   // :::success ... :::
   md = md.replace(/:::success\s*(.*?)\n([\s\S]*?):::/gm, (_, title, body) =>
-    `<div class="notice-box notice-success"><div class="notice-title">✅ ${title}</div>${body.trim()}</div>\n`
+    `<div class="notice-box notice-success"><div class="notice-title">✅ ${title}</div>${renderAdmonitionBody(body)}</div>\n`
   );
   // 動画ブロック [VIDEO:url:タイトル] または [VIDEO:タイトル]（プレースホルダ）
   md = md.replace(/\[VIDEO:(.+):([^\]:]+)\]/g, (_, url, title) =>
