@@ -78,6 +78,8 @@
 - 注射後から1時間程度の待ち時間を説明
 - ボースデルありの検査：軟便になりやすいことを説明
 
+![](assets/images/checkin/premedication_flow.png)
+
 ---
 
 ## ■ 金属チェック・入室
