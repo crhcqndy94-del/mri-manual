@@ -113,3 +113,20 @@
 - T1 SE COR は脳幹に平行
 - 突発性難聴：CISSとFLAIR 3D TRAを同期させること
 :::
+
+---
+
+## ■ 知っておくべき解剖
+
+<div style="display:flex;gap:8px;margin-bottom:8px;">
+<img src="assets/images/head/vertigo/anatomy_1.png" style="width:50%;">
+<img src="assets/images/head/vertigo/anatomy_2.png" style="width:50%;">
+</div>
+<div style="display:flex;gap:8px;margin-bottom:8px;">
+<img src="assets/images/head/vertigo/anatomy_3.png" style="width:50%;">
+<img src="assets/images/head/vertigo/anatomy_4.png" style="width:50%;">
+</div>
+<div style="display:flex;gap:8px;margin-bottom:8px;">
+<img src="assets/images/head/vertigo/anatomy_5.png" style="width:50%;">
+<img src="assets/images/head/vertigo/anatomy_6.png" style="width:50%;">
+</div>
