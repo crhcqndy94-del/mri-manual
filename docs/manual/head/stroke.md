@@ -94,13 +94,23 @@ DWI・FLAIR・T2*Wを中心に、MRAで血管評価を行う。
 
 Willis動脈輪の範囲を撮像。内頚動脈のみ残してカット（外頚・枝はできる限りカット）
 
-[IMG:頭部MRA 位置合わせ参照]
-
 :::info MRAカット方針
 - 通常（Brain CI）： 内頚動脈のみ残す（外頚・枝はカット）
 - 緊急（Rapid）： 内頚・外頚動脈は残す
 - TIA・ふらつき： long MRAを撮像（内頚外頚分岐部から含める）
 :::
+
+---
+
+## ■ MRA 撮像範囲
+
+### 図1 — Head CI MRA 撮像範囲
+
+![Head CI MRA 撮像範囲](assets/images/head/mra/ci_mra_range.png)
+
+### 図2 — Head Long MRA 撮像範囲
+
+![Head Long MRA 撮像範囲](assets/images/head/mra/long_mra_range.png)
 
 ---
 
