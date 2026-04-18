@@ -195,9 +195,19 @@ a:hover { text-decoration: underline; }
 
 .nav-home {
   display: block; padding: 10px 20px;
-  font-weight: 700; font-size: 0.95rem; color: var(--primary);
+  font-weight: 700; font-size: 0.95rem; color: #e0f8fd;
 }
 .nav-home:hover { background: var(--primary-pale); }
+
+.nav-cat-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 6px;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
 
 .nav-category {
   display: block;
