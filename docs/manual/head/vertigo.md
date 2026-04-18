@@ -42,7 +42,14 @@
 
 脳神経の基準線を参考にする
 
-[IMG:3D T2 DRIVE 断面設定（脳神経基準線）]
+![](assets/images/head/vertigo/ciss_sag.png)
+
+![](assets/images/head/vertigo/ciss_cor.png)
+
+:::info 断面設定の目安
+- Corで両蝸牛に平行に設定
+- Sagで脳幹に垂直に設定
+:::
 
 ---
 
