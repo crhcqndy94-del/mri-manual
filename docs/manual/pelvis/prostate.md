@@ -2,6 +2,12 @@
 
 最終改訂：2025年11月4日
 
+## ■ 前投薬フローチャート
+
+![](assets/images/checkin/premedication_flow.png)
+
+---
+
 ## ■ 前立腺単純 — Prostate（Plain）3.0T限定
 
 | # | シーケンス | FOV | スライス厚 | 枚数 | 備考 |

@@ -2,6 +2,12 @@
 
 最終改訂：2025年11月4日
 
+## ■ 前投薬フローチャート
+
+![](assets/images/checkin/premedication_flow.png)
+
+---
+
 ## ■ 直腸単純 — Rectum（Plain）前投薬あり
 
 | # | シーケンス | FOV | スライス厚 | 枚数 | 備考 |
