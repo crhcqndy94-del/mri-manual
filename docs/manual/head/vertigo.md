@@ -51,3 +51,20 @@
 - 3D T2 DRIVE は脳神経の基準線を参考に位置を合わせる
 - 耳鳴りが主訴の場合：頭部MRAは AVF（動静脈瘻） がないかを確認している
 :::
+
+---
+
+## ■ 知っておくべき解剖
+
+<div style="display:flex;gap:8px;margin-bottom:8px;">
+<img src="assets/images/head/vertigo/anatomy_1.png" style="width:50%;">
+<img src="assets/images/head/vertigo/anatomy_2.png" style="width:50%;">
+</div>
+<div style="display:flex;gap:8px;margin-bottom:8px;">
+<img src="assets/images/head/vertigo/anatomy_3.png" style="width:50%;">
+<img src="assets/images/head/vertigo/anatomy_4.png" style="width:50%;">
+</div>
+<div style="display:flex;gap:8px;margin-bottom:8px;">
+<img src="assets/images/head/vertigo/anatomy_5.png" style="width:50%;">
+<img src="assets/images/head/vertigo/anatomy_6.png" style="width:50%;">
+</div>
