@@ -47,6 +47,10 @@ LookLocker撮像後、速やかに正常心筋にROIを設定しTICよりNull po
 </div>
 </div>
 
+:::warning
+動画内ではFeet Firstで説明していますが、現在はHead Firstに変更しています
+:::
+
 ---
 
 ![](assets/images/heart/imaging/p01.jpg)
