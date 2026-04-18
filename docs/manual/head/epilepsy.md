@@ -42,9 +42,12 @@
 
 ### 3D FLAIR COR（海馬評価）
 
-海馬に垂直に合わせる
+![](assets/images/head/epilepsy/flair_cor_hippocampus.png)
 
-[IMG:3D FLAIR COR 断面設定（海馬垂直）]
+:::info 断面設定の目安
+- 海馬に垂直に合わせる
+- 斜台〜脳梁が撮像範囲に含まれていればOK
+:::
 
 ### T1 SAG（パーキンソン）
 
