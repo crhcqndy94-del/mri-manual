@@ -200,12 +200,17 @@ a:hover { text-decoration: underline; }
 .nav-home:hover { background: var(--primary-pale); }
 
 .nav-cat-icon {
-  width: 20px;
-  height: 20px;
+  width: 22px !important;
+  height: 22px !important;
+  min-width: 22px !important;
+  min-height: 22px !important;
+  max-width: 22px !important;
+  max-height: 22px !important;
   border-radius: 50%;
   object-fit: cover;
   margin-right: 6px;
   vertical-align: middle;
+  display: inline-block;
   flex-shrink: 0;
 }
 
