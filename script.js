@@ -82,7 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initSearch();
   initNavLinks();
   initLightbox();
-  initTocFab();
   loadSearchIndex();
 
   // URL ハッシュからページ復元
@@ -155,7 +154,6 @@ function navigateTo(page, skipHistory) {
   if (page === 'home') {
     homePage.classList.remove('hidden');
     manualPage.classList.add('hidden');
-    document.getElementById('fabToc').style.display = 'none';
     window.scrollTo(0, 0);
     return;
   }
@@ -221,9 +219,6 @@ function renderMarkdown(md) {
   // TOC 生成
   buildTOC(content);
 
-  // FAB TOC ボタン表示
-  const fabToc = document.getElementById('fabToc');
-  if (fabToc) fabToc.style.display = 'flex';
 }
 
 // ===== admonitionボディのmarkdownリストをHTMLに変換 =====
@@ -366,39 +361,6 @@ function initTocHighlight(container) {
   headings.forEach(h => observer.observe(h));
 }
 
-// ===== FAB TOC ボタン（スマホ） =====
-function initTocFab() {
-  const fab = document.getElementById('fabToc');
-  if (!fab) return;
-  fab.style.display = 'none';
-
-  // TOC モーダル作成
-  tocModal = document.createElement('div');
-  tocModal.className = 'toc-modal';
-  tocModal.innerHTML = `
-    <div class="toc-modal-overlay"></div>
-    <div class="toc-modal-content">
-      <div class="toc-modal-title">目次</div>
-      <nav id="tocModalNav"></nav>
-    </div>`;
-  document.body.appendChild(tocModal);
-
-  tocModal.querySelector('.toc-modal-overlay').addEventListener('click', () => {
-    tocModal.classList.remove('open');
-  });
-
-  fab.addEventListener('click', () => {
-    // TOC内容をモーダルに複製
-    const tocNav = document.getElementById('tocNav');
-    const modalNav = document.getElementById('tocModalNav');
-    modalNav.innerHTML = tocNav.innerHTML;
-    // クリックで閉じる
-    modalNav.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => tocModal.classList.remove('open'));
-    });
-    tocModal.classList.add('open');
-  });
-}
 
 // ===== 検索 =====
 async function loadSearchIndex() {
