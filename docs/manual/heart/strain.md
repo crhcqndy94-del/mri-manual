@@ -46,7 +46,6 @@
 
 ![](assets/images/heart/strain/p12.jpg)
 
-
 ---
 
 ![](assets/images/heart/strain/p13.jpg)
@@ -79,7 +78,6 @@
 
 ![](assets/images/heart/strain/p20.jpg)
 
-
 ---
 
 ![](assets/images/heart/strain/p21.jpg)
@@ -87,7 +85,6 @@
 ---
 
 ![](assets/images/heart/strain/p22.jpg)
-
 
 ---
 
@@ -104,10 +101,3 @@
 ---
 
 ![](assets/images/heart/strain/p26.jpg)
-
----
-
-![](assets/images/heart/strain/p27.jpg)
-
-
----
