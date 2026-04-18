@@ -42,6 +42,7 @@ const PAGE_MAP = {
   'abdomen/kidney':       'docs/manual/abdomen/kidney.md',
   'pelvis/uterus':        'docs/manual/pelvis/uterus.md',
   'pelvis/prostate':      'docs/manual/pelvis/prostate.md',
+  'pelvis/bladder':       'docs/manual/pelvis/bladder.md',
   'pelvis/rectum':        'docs/manual/pelvis/rectum.md',
   'spine/cervical':       'docs/manual/spine/cervical.md',
   'spine/thoracic':       'docs/manual/spine/thoracic.md',
