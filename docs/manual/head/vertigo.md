@@ -42,9 +42,10 @@
 
 脳神経の基準線を参考にする
 
-![](assets/images/head/vertigo/ciss_sag.png)
-
-![](assets/images/head/vertigo/ciss_cor.png)
+<div style="display:flex;gap:8px;">
+<img src="assets/images/head/vertigo/ciss_sag.png" style="width:50%;">
+<img src="assets/images/head/vertigo/ciss_cor.png" style="width:50%;">
+</div>
 
 :::info 断面設定の目安
 - Corで両蝸牛に平行に設定
