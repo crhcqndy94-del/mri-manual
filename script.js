@@ -49,6 +49,7 @@ const PAGE_MAP = {
   'spine/total':          'docs/manual/spine/total.md',
   'checkin':              'docs/manual/checkin.md',
   'contrast':             'docs/manual/contrast.md',
+  'premedication':        'docs/manual/premedication.md',
   'heart/index':          'docs/manual/heart/index.md',
   'heart/imaging':        'docs/manual/heart/imaging.md',
   'heart/isp_cardiac':    'docs/manual/heart/isp_cardiac.md',
