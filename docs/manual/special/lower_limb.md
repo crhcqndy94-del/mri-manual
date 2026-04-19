@@ -33,3 +33,17 @@
 ## 撮像プロトコル（準備中）
 
 内容は追加予定です。
+
+---
+
+## ■ 動画マニュアル
+
+<div class="video-block">
+<video controls playsinline preload="metadata" style="width:100%;display:block;background:#000;">
+<source src="https://github.com/crhcqndy94-del/mri-manual/releases/download/media/lower_limb_mra_720p.mp4" type="video/mp4">
+</video>
+<div class="video-footer">
+<span class="video-title">🎬 下肢血管MRA（3.0T）撮像手順</span>
+<a class="video-download" href="https://github.com/crhcqndy94-del/mri-manual/releases/download/media/lower_limb_mra_720p.mp4" download="lower_limb_mra.mp4">⬇ ダウンロード</a>
+</div>
+</div>
