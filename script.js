@@ -51,6 +51,7 @@ const PAGE_MAP = {
   'checkin':              'docs/manual/checkin.md',
   'contrast':             'docs/manual/contrast.md',
   'premedication':        'docs/manual/premedication.md',
+  'asl_color':            'docs/manual/asl_color.md',
   'heart/index':          'docs/manual/heart/index.md',
   'heart/imaging':        'docs/manual/heart/imaging.md',
   'heart/isp_cardiac':    'docs/manual/heart/isp_cardiac.md',
