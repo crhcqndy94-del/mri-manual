@@ -92,7 +92,5 @@
 
 ## ■ ASL カラー表示方法
 
-<div style="display:flex;gap:8px;">
-<img src="assets/images/head/child/asl_color_1.png" style="width:50%;">
-<img src="assets/images/head/child/asl_color_2.png" style="width:50%;">
-</div>
+![](assets/images/head/child/asl_color_1.png)
+![](assets/images/head/child/asl_color_2.png)
