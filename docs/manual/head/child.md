@@ -76,3 +76,14 @@
 - long MRAは内頚外頚分岐部から吻合部まで含める
 - CAS後はASLを撮像
 :::
+
+---
+
+## ■ CAS後のASL撮像時の注意点
+
+![](assets/images/head/child/cas_asl_caution.png)
+
+:::warning CAS後ASL 注意
+- ステントの位置にラベリングをあてない様にする
+- Dyn/Ang の Label distance や撮像範囲でラベル位置を調整する
+:::
