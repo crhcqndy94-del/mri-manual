@@ -23,3 +23,10 @@
 - 開口時はバイトブロックを縦にして口にくわえてもらう
 - 開口時は動きやすいため、患者に出来る限り動かない様に説明する
 :::
+
+---
+
+## ■ TMJ撮像マニュアル
+
+![](assets/images/jaw/tmj_manual_1.png)
+![](assets/images/jaw/tmj_manual_2.png)
